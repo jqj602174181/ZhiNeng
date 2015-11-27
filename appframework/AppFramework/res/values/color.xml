@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="framework_transparent1">#DF000000</color>
+    <color name="framework_transparent">#00000000</color>
+    <color name="framework_gray">#E8E8E8</color>
+    <color name="framework_yellow">#F88B00</color>
+    <color name="framework_black">#222222</color>
+    <color name="framework_white">#BFBFBF</color>
+    <color name="framework_tab_bg">#33A094</color>
+    <color name="framework_orange">#FF6600</color>
+    <color name="framework_btn_color">#C8C8C8</color>
+    <color name="framework_dialog_bk">#FF1E9586</color>
+     <color name="framework_select_bk">#FFfefefe</color>
+    <color name="framework_font_tip">#909090</color>
+    <color name="framework_red">#aa2412</color>
+	<color name="framework_province_line_border">#C7C7C7</color>
+	<color name="framework_lightwhite">#FFFFFF</color>
+	<color name="framework_lightgray">#888888</color>
+	<color name="framework_black_edittext">#423414</color>
+	<color name="framework_green_tipok">#08bfa9</color>
+	<color name="framework_red_tiperr">#cc3333</color>
+	<color name="framework_text_green">#307f01</color>
+	<drawable name="framework_title_bk">#FF1E9586</drawable>
+	<drawable name="framework_transparent_drawable">#00000000</drawable>
+		<color name="province_line_border">#C7C7C7</color>
+		<color name="framework_text_color">#ff808080</color>
+</resources>

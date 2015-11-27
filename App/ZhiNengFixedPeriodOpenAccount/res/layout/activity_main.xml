@@ -1,0 +1,328 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 身份证信息 -->
+
+    <include
+        android:id="@+id/FRAGMENT_IDCARDINFO"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="15dp"
+        layout="@layout/fragment_idinfo_layout" />
+
+    <LinearLayout
+        android:layout_width="1000dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/dottedline"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/BLOCK_OpenAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="30dp"
+            layout="@layout/block_open_account_style_layout" />
+        <!-- 开户金额来源 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal" >
+
+            <com.centerm.autofill.appframework.view.CTTextView
+                style="@style/TextViewStyle"
+                android:layout_width="200dp"
+                android:layout_marginLeft="10dp"
+                android:text="*开户金额来源：" />
+
+            <RadioGroup
+                android:id="@+id/RG_TRANSACTIONTYPE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/RB_TRANS_CURRENT"
+                    style="@style/RBFixedHMRStyle1"
+                    android:checked="true"
+                    android:text="现金" />
+
+                <RadioButton
+                    android:id="@+id/RB_TRANS_TRANSFER"
+                    style="@style/RBFixedHMRStyle1"
+                    android:text="从开户人卡/折转帐" />
+
+                <RadioButton
+                    android:id="@+id/RB_TRANS_TRANSFER_OTHER"
+                    style="@style/RBFixedHMRStyle1"
+                    android:text="从他人卡/折转帐" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- 开户金额 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal" >
+
+            <com.centerm.autofill.appframework.view.CTTextView
+                style="@style/TextViewStyle"
+                android:layout_width="210dp"
+                android:text="@string/start_amount" />
+
+            <EditText
+                android:id="@+id/EDIT_StartAmount"
+                style="@style/MoneyEditTextStyle"
+                android:layout_width="250dp"
+                android:layout_marginLeft="20dp"
+                android:inputType="numberDecimal"
+                android:maxLength="20" />
+
+            <TextView
+                style="@style/LabelTipStyle"
+                android:layout_marginLeft="20dp"
+                android:text="不明确金额，可不填"
+                android:textColor="#ff5555" />
+        </LinearLayout>
+
+        <!-- 交易人手机号 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal" >
+
+            <com.centerm.autofill.appframework.view.CTTextView
+                style="@style/TextViewStyle"
+                android:layout_width="200dp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/mobile_no" />
+
+            <EditText
+                android:id="@+id/EDIT_MobileNo"
+                style="@style/PhoneEditTextStyle"
+                android:layout_width="220dp"
+                android:layout_marginLeft="20dp"
+                android:hint="@string/hint_input_mobile_no" />
+        </LinearLayout>
+
+        <!-- 转出方手机号 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <com.centerm.autofill.appframework.view.CTTextView
+                style="@style/TextViewStyle"
+                android:layout_width="200dp"
+                android:layout_marginLeft="10dp"
+                android:text="*转出方手机号：" />
+
+            <EditText
+                android:id="@+id/EDIT_FromMobileNo"
+                style="@style/PhoneEditTextStyle"
+                android:layout_width="220dp"
+                android:layout_marginLeft="20dp"
+                android:hint="@string/hint_input_mobile_no" />
+        </LinearLayout>
+
+        <!-- 储种 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal" >
+
+            <com.centerm.autofill.appframework.view.CTTextView
+                style="@style/TextViewStyle"
+                android:layout_width="200dp"
+                android:layout_marginLeft="10dp"
+                android:text="*储种：" />
+
+            <RadioGroup
+                android:id="@+id/RG_TERMTYPE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/RB_TERM_FIX"
+                    style="@style/RBFixedHMRStyle1"
+                    android:layout_width="140dp"
+                    android:checked="true"
+                    android:text="整存整取" />
+
+                <RadioButton
+                    android:id="@+id/RB_lingChunZhengQu"
+                    style="@style/RBFixedHMRStyle1"
+                    android:layout_width="140dp"
+                    android:text="@string/lingChunZhengQu" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- 支取方式 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal" >
+
+            <com.centerm.autofill.appframework.view.CTTextView
+                style="@style/TextViewStyle"
+                android:layout_width="200dp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/withdrawal_type" />
+
+            <RadioGroup
+                android:id="@+id/RG_WithdrawType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/RB_Password"
+                    style="@style/RBFixedHMRStyle1"
+                    android:layout_width="140dp"
+                    android:checked="true"
+                    android:text="@string/password" />
+
+                <RadioButton
+                    android:id="@+id/RB_Certificate"
+                    style="@style/RBFixedHMRStyle1"
+                    android:layout_width="140dp"
+                    android:text="@string/certificate" />
+
+                <RadioButton
+                    android:id="@+id/RB_Stamp"
+                    style="@style/RBFixedHMRStyle1"
+                    android:layout_width="140dp"
+                    android:text="@string/stamp" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/RG_WithdrawTypePassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <RadioButton
+                    android:id="@+id/RB_Password1"
+                    style="@style/RBFixedHMRStyle1"
+                    android:layout_width="140dp"
+                    android:checked="true"
+                    android:text="@string/password" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- 存期 -->
+
+        <LinearLayout
+            android:id="@+id/BLOCK_DEPOSITTERM"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal" >
+
+            <com.centerm.autofill.appframework.view.CTTextView
+                style="@style/TextViewStyle"
+                android:layout_width="200dp"
+                android:layout_marginLeft="10dp"
+                android:text="*存期：" />
+
+            <Spinner
+                android:id="@+id/SP_DEPOSITTERM"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/job_bg" />
+        </LinearLayout>
+
+        <!-- 转存标志 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal" >
+
+            <com.centerm.autofill.appframework.view.CTTextView
+                style="@style/TextViewStyle"
+                android:layout_width="200dp"
+                android:layout_marginLeft="10dp"
+                android:text="*转存约定：" />
+
+            <RadioGroup
+                android:id="@+id/RG_REDEPOSITTYPE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/RB_REDEPOSIT1"
+                    style="@style/RBFixedHMRStyle1"
+                    android:layout_width="160dp"
+                    android:checked="true"
+                    android:text="不自动转存" />
+
+                <RadioButton
+                    android:id="@+id/RB_REDEPOSIT2"
+                    style="@style/RBFixedHMRStyle1"
+                    android:layout_width="180dp"
+                    android:text="整整本息转存" />
+
+                <RadioButton
+                    android:id="@+id/RB_REDEPOSIT3"
+                    style="@style/RBFixedHMRStyle1"
+                    android:layout_width="180dp"
+                    android:text="整整本金转存 " />
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- 办理人 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/block_ransaction_layout" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

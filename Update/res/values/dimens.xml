@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="toastHeight">50dp</dimen>
+    <dimen name="textHeight">100dp</dimen>
+    <dimen name="marginTop">15dp</dimen>
+    <dimen name="marginL">30dp</dimen>
+    <dimen name="marginTop1">15dp</dimen>
+    <dimen name="marginLeft">50dp</dimen>
+    <dimen name="updateTextSize">22sp</dimen>
+    <dimen name="margin1">15dp</dimen>
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    
+
+  
+<LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+   	android:gravity="center_horizontal"
+    android:orientation="vertical"
+    >
+    
+     
+    <Button android:id="@+id/BTN_UPDATE"
+        android:layout_width="@dimen/buttonWidth"
+        android:padding="10dp"
+        android:layout_height="60dp"
+        android:text="@string/update_now"
+        android:textSize="30sp"
+        android:background="@drawable/btn_selector"
+        android:textColor="@color/lightwhite"
+        android:layout_marginTop="30dp"
+ 	/>
+    
+     <Button android:id="@+id/BTN_UPDATE_Printer"
+  		android:layout_width="@dimen/buttonWidth"
+        android:padding="10dp"
+        android:layout_height="60dp"
+        android:text="@string/update_printer"
+        android:textSize="30sp"
+        android:background="@drawable/btn_selector"
+        android:textColor="@color/lightwhite"
+        android:layout_marginTop="30dp"
+ 		/>
+     
+     <Button android:id="@+id/BTN_UPDATE_App"
+        android:layout_width="@dimen/buttonWidth"
+        android:padding="10dp"
+        android:layout_height="60dp"
+        android:text="@string/update_app"
+        android:textSize="30sp"
+        android:background="@drawable/btn_selector"
+        android:textColor="@color/lightwhite"
+        android:layout_marginTop="30dp"
+	 />
+</LinearLayout>
+
+</RelativeLayout>

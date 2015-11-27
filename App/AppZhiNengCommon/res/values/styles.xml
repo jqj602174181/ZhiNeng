@@ -1,0 +1,219 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="dialog_style" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 对话框是否有遮盖 -->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- 输入框属性 -->
+    <style name="EditStyle">
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:background">@drawable/nmnx_edit_selector</item>
+        <item name="android:imeOptions">actionDone</item>
+        <!-- 键盘变成完成 -->
+        <item name="android:paddingLeft">20dp</item>
+    </style>
+
+    <!-- 标签文字样式 -->
+    <style name="LabelStyle">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+
+    <style name="LabelBeforeEditStyle">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:gravity">right</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:gravity">center_vertical|right</item>
+    </style>
+
+    <style name="RBFixedHMRStyle1" parent="RBStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginRight">50dp</item>
+    </style>
+
+    <!-- 提示文本样式 -->
+    <style name="LabelTipStyle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/text_unselected</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+
+    <!-- 单选按钮样式 -->
+    <style name="RBStyle">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@drawable/component_text_selector</item>
+        <item name="android:button">@drawable/nmnx_rb_selector</item>
+    </style>
+
+    <!-- TextView相关属性,长度与150 -->
+    <style name="TextViewStyle" parent="TextViewStyleBase">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+
+    <!-- 按钮样式 -->
+    <style name="BtnStyle">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/nmnx_btn_selector</item>
+    </style>
+    <!-- 按钮样式 -->
+    <style name="ReadCardBtnStyle" parent="BtnStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/readcard</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+    </style>
+
+    <!-- 下拉框样式 -->
+    <style name="CBStyle">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/text_unselected</item>
+        <item name="android:background">@drawable/nmnx_comb_selector</item>
+    </style>
+
+    <!-- 复选框样式 -->
+    <style name="CBXStyle">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:button">@drawable/nmnx_cbx_selector</item>
+        <item name="android:paddingLeft">10dp</item>
+    </style>
+
+    <!-- 文本框基础属性 -->
+    <style name="TextViewStyleBase" parent="LabelStyle">
+        <item name="android:gravity">center_vertical|right</item>
+    </style>
+
+    <!-- 输入框属性 -->
+    <style name="EditTextStyle" parent="EditStyle">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <!-- RadioButton属性，长度为适应 -->
+    <style name="RadioButtonStyle" parent="RBStyle">
+	·	                <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- 电话输入框属性 -->
+    <style name="PhoneEditTextStyle" parent="EditStyle">
+        <item name="android:hint">@string/inputPhoneNumber</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">200dp</item>
+        <item name="android:inputType">phone</item>
+        <item name="android:maxLength">13</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <!-- 帐号输入框属性 -->
+    <style name="AccountEditTextStyle" parent="EditStyle">
+        <item name="android:hint">@string/inputAccounts</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:inputType">number</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:maxLength">32</item>
+    </style>
+
+    <!-- 户名输入框属性 -->
+    <style name="NameEditTextStyle" parent="EditStyle">
+        <item name="android:hint">@string/inputName</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:inputType">text</item>
+    </style>
+
+    <!-- 邮政编码输入框属性 -->
+    <style name="PostalEditTextStyle" parent="EditStyle">
+        <item name="android:hint">@string/input_postal</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:inputType">number</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:maxLength">6</item>
+    </style>
+
+    <!-- 金额输入框属性 -->
+    <style name="MoneyEditTextStyle" parent="EditStyle">
+        <item name="android:hint">@string/inputMoney</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:inputType">numberDecimal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:maxLength">9</item>
+    </style>
+
+    <!-- 开户行输入框属性 -->
+    <style name="BankEditTextStyle" parent="EditStyle">
+        <item name="android:hint">@string/inputBank</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:inputType">text</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <!-- 普通文本输入框属性 -->
+    <style name="TextEditTextStyle" parent="EditStyle">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:inputType">text</item>
+    </style>
+
+    <style name="LabelStar1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:text">@string/star</item>
+        <item name="android:textColor">#db0000</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <!-- 日期按钮样式 -->
+    <style name="DateBtnStyle">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:background">@drawable/nmnx_btn_date_selector</item>
+        <item name="android:paddingLeft">20dp</item>
+    </style>
+
+    <style name="LinearLayoutBlockH">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+</resources>

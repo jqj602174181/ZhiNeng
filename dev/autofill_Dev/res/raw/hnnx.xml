@@ -1,0 +1,1045 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Print dev="oki5530">
+	<!--进帐单-->
+	<Transaction code="8080">
+		<Page>
+			<Raw>1042</Raw>
+			<Raw>1B25390024</Raw>
+			<Raw>0D0A0D0A</Raw>
+			<Span key="sign_year" length="48" align="right"/>
+			<Span key="sign_month" length="8" align="right"/>
+			<Span key="sign_day" length="11" align="right"/>
+			<Raw>1B253900230D0A</Raw>
+			<Span length="27"/>
+			<Span key="drawer_name" length="50" align="left"/>
+			<Span key="payee_name" length="20" align="left"/>
+			<Raw>0D0A</Raw>
+			<Span length="27"/>
+			<Span key="drawer_account" length="50" align="left"/>
+			<Span key="payee_account" length="20" align="left"/>
+			<Raw>0D0A</Raw>
+			<Span length="27"/>
+			<Span key="drawer_bank" length="50" align="left"/>
+			<Span key="payee_bank" length="32" align="left"/>
+			<Raw>0D0A1B253900170D0A</Raw>
+			<Span length="27"/>
+			<Span key="amount_upper" length="51" align="left"/>
+			<Raw>1C2420</Raw>
+			<Money key="amount_lower" length="12" align="right"/>
+			<Raw>1B253900231C240D0D0A</Raw>
+			<Span length="27"/>
+			<Span key="note_type" length="28" align="left"/>
+			<Span key="note_quantity" length="10" align="left"/>
+			<Raw>0D0A</Raw>
+			<Span length="27"/>
+			<Span key="note_num" length="32" align="left"/>
+			<Raw>0D0A0D0A0D0A0C</Raw>
+		</Page>
+	</Transaction>
+	<!--开户-->
+	<Transaction code="1052">
+		<Page>
+			<Raw>1042</Raw>
+			<Raw>1B25390019</Raw>
+			<Raw>0D0A0D0A</Raw>
+			<Span key="sign_year" length="100" align="right"/>
+			<Span key="sign_month" length="5" align="right"/>
+			<Span key="sign_day" length="5" align="right"/>
+			<Raw>1B2539001C0D0A</Raw>
+			<Span length="53"/>
+			<Select key="account_type">
+				<Option value="1" length="10" rawtext="A1CC" align="left"/>
+				<Option value="2" length="10" rawtext="A1CC" align="left"/>
+				<Option value="3" length="10" rawtext="A1CC" align="left"/>
+				<Option value="4" length="9" rawtext="A1CC" align="left"/>
+				<Option value="5" length="10" rawtext="A1CC" align="left"/>
+				<Option value="6" length="10" rawtext="A1CC" align="left"/>
+				<Option value="7" length="2" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>1B2539001C0D0A</Raw>
+			<Span length="53"/>
+			<Select key="account_type">
+				<Option value="8" length="9" rawtext="A1CC" align="left"/>
+				<Option value="9" length="15" rawtext="A1CC" align="left"/>
+				<Option value="10" length="10" rawtext="A1CC" align="left"/>
+				<Option value="11" length="11" rawtext="A1CC" align="left"/>
+				<Option value="12" length="11" rawtext="A1CC" align="left"/>
+				<Option value="13" length="2" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>1B253900140D0A0D0A</Raw>
+			<Span length="56"/>
+			<Span key="period" length="18" align="left"/>
+			<Select key="withdraw_type">
+				<Option value="1" length="8" rawtext="A1CC" align="left"/>
+				<Option value="2" length="6" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>1B253900200D0A</Raw>
+			<Span length="59"/>
+			<Select key="orrange">
+				<Option value="1" length="9" rawtext="A1CC" align="left"/>
+				<Option value="2" length="9" rawtext="A1CC" align="left"/>
+				<Option value="3" length="9" rawtext="A1CC" align="left"/>
+				<Option value="4" length="9" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>1B2539001B0D0A</Raw>
+			<Span length="59"/>
+			<Select key="archived_type">
+				<Option value="1" length="10" rawtext="A1CC" align="left"/>
+				<Option value="2" length="9" rawtext="A1CC" align="left"/>
+				<Option value="3" length="9" rawtext="A1CC" align="left"/>
+				<Option value="4" length="9" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>0D0A</Raw>
+			<Span length="51"/>
+			<Select>
+				<Option value="1" length="9" rawtext="A1CC" align="left"/>
+			</Select>
+			<Span key="archived_period" length="6" align="left"/>
+			<Select>
+				<Option value="1" length="15" rawtext="A1CC" align="left"/>
+			</Select>
+			<Span key="archived_account" length="19" align="left"/>
+			<Raw>1B253900150D0A</Raw>
+			<Span length="59"/>
+			<Select key="withdraw_interval">
+				<Option value="1" length="7" rawtext="A1CC" align="left"/>
+				<Option value="2" length="7" rawtext="A1CC" align="left"/>
+				<Option value="3" length="2" rawtext="A1CC" align="left"/>
+			</Select>
+			<Span length="65"/>
+			<Span key="openaccount_src" length="31" align="left"/>
+			<Raw>1C2420</Raw>
+			<Money key="amount" length="11" align="right"/>
+			<Raw>1C240D1B253900160D0A0D0A0D0A</Raw>
+			<Span length="48"/>
+			<Span key="name" length="20" align="left"/>
+			<Span key="ID_type" length="21" align="left"/>
+			<Span key="ID_num" length="24" align="left"/>
+			<Span key="telephone" length="11" align="left"/>
+			<Raw>0D0A1B253900180D0A</Raw>
+			<Span length="48"/>
+			<Span key="agent_name" length="20" align="left"/>
+			<Span key="agent_ID_type" length="21" align="left"/>
+			<Span key="agent_ID_num" length="24" align="left"/>
+			<Span key="agent_telephone" length="11" align="left"/>
+			<Raw>0D0A0C</Raw>
+		</Page>
+	</Transaction>
+	<!--无卡/折存现-->
+	<Transaction code="1086">
+		<Page>
+			<Raw>1042</Raw>
+			<Raw>1B25390017</Raw>
+			<Raw>0D0A0D0A0D0A0D0A0D0A0D0A0D0A0D0A0D0A0D0A0D0A0D0A0D0A</Raw>
+			<Span length="29"/>
+			<Span key="transfer_account" length="42" align="left"/>
+			<Span key="transfer_name" length="30" align="left"/>
+			<Raw>1B253900180D0A</Raw>
+			<Span length="25"/>
+			<Span key="transfer_amount_upper_l1" length="50" align="left"/>
+			<Raw>0D0A</Raw>
+			<Span length="25"/>
+			<Span key="transfer_amount_upper_l2" length="37" align="left"/>
+			<Raw>1C241C</Raw>
+			<Money key="transfer_amount_lower" length="12" align="right"/>
+			<Raw>1C240D0D0A0C</Raw>
+		</Page>
+		<Page>
+			<Raw>1042</Raw>
+			<Raw>1B25390016</Raw>
+			<Raw>0D0A0D0A</Raw>
+			<Span key="sign_year" length="100" align="right"/>
+			<Span key="sign_month" length="5" align="right"/>
+			<Span key="sign_day" length="5" align="right"/>
+			<Raw>1B25390017</Raw>
+			<Raw>0D0A0D0A</Raw>
+			<Raw>1B25390016</Raw>
+			<Raw>0D0A0D0A0D0A0D0A0D0A0D0A0D0A0D0A0D0A0D0A0D0A</Raw>
+			<Span length="48"/>
+			<Span key="name" length="20" align="left"/>
+			<Span key="ID_type" length="21" align="left"/>
+			<Span key="ID_num" length="24" align="left"/>
+			<Span key="telephone" length="11" align="left"/>
+			<Raw>0D0A1B253900180D0A</Raw>
+			<Span length="48"/>
+			<Span key="agent_name" length="20" align="left"/>
+			<Span key="agent_ID_type" length="21" align="left"/>
+			<Span key="agent_ID_num" length="24" align="left"/>
+			<Span key="agent_telephone" length="11" align="left"/>
+			<Raw>0D0A0C</Raw>
+		</Page>
+	</Transaction>
+	<!--电（信）汇凭证-->
+	<Transaction code="6001">
+		<Page>
+			<Raw>1042</Raw>
+			<Raw>1B253900160D0A0D0A</Raw>
+			<Span length="10"/>
+			<Select key="urgency">
+				<Option value="1" length="8" rawtext="A1CC" align="left"/>
+				<Option value="2" length="37" rawtext="A1CC" align="left"/>
+			</Select>
+			<Span key="sign_year" length="10" align="left"/>
+			<Span key="sign_month" length="6" align="left"/>
+			<Span key="sign_day" length="2" align="left"/>
+			<Raw>1B253900200D0A</Raw>
+			<Span length="22"/>
+			<Span key="remitter_name" length="46" align="left"/>
+			<Span key="payee_name" length="30" align="left"/>
+			<Raw>0D0A</Raw>
+			<Span length="22"/>
+			<Span key="remitter_account" length="46" align="left"/>
+			<Span key="payee_account" length="30" align="left"/>
+			<Raw>0D0A</Raw>
+			<Span length="22"/>
+			<Span key="remitter_province" length="11" align="left"/>
+			<Span key="remitter_city" length="35" align="left"/>
+			<Span key="payee_province" length="11" align="left"/>
+			<Span key="payee_city" length="10" align="left"/>
+			<Raw>0D0A</Raw>
+			<Span length="22"/>
+			<Span key="out_bank" length="46" align="left"/>
+			<Span key="in_bank" length="30" align="left"/>
+			<Raw>0D0A</Raw>
+			<Span length="20"/>
+			<Span key="amount_upper" length="54" align="left"/>
+			<Raw>1B253900170D0A</Raw>
+			<Span length="74"/>
+			<Raw>1C2423</Raw>
+			<Money key="amount_lower" length="12" align="right"/>
+			<Raw>1C240D0D0A0D0A0D0A0D0A</Raw>
+			<Span length="60"/>
+			<Span key="add_info" length="54" align="left"/>
+			<Raw>0C</Raw>
+		</Page>
+	</Transaction>
+	<!--现金缴款单-->
+	<Transaction code="1092">
+		<Page>
+			<Raw>1042</Raw>
+			<Raw>1B253900160D0A0D0A0D0A</Raw>
+			<Span length="15"/>
+			<Select key="currency">
+				<Option value="1" length="8" rawtext="A1CC" align="left"/>
+				<Option value="2" length="21" rawtext="A1CC" align="left"/>
+			</Select>
+			<Span key="sign_year" length="8" align="left"/>
+			<Span key="sign_month" length="4" align="left"/>
+			<Span key="sign_day" length="2" align="left"/>
+			<Raw>1B2539002C0D0A</Raw>
+			<Span length="25"/>
+			<Span key="payee" length="58" align="left"/>
+			<Span key="payer" length="30" align="left"/>
+			<Raw>0D0A</Raw>
+			<Span length="25"/>
+			<Span key="account" length="58" align="left"/>
+			<Span key="money_src" length="30" align="left"/>
+			<Raw>0D0A</Raw>
+			<Span length="25"/>
+			<Raw>C8CBC3F1B1D2</Raw>
+			<Span key="amount_upper" length="50" align="left"/>
+			<Raw>1B253900100D0A</Raw>
+			<Span length="74"/>
+			<Raw>1C2423</Raw>
+			<Money key="amount_lower" length="12" align="right"/>
+			<Raw>1C240D0D0A0C</Raw>
+		</Page>
+	</Transaction>
+	<!--特殊业务申请书-->
+	<Transaction code="1123|0123|1132">
+		<Page>
+			<Raw>1042</Raw>
+			<Raw>1B2539001B0D0A0D0A</Raw>
+			<Span length="43"/>
+			<Span key="sign_year" length="8" align="left"/>
+			<Span key="sign_month" length="6" align="left"/>
+			<Span key="sign_day" length="2" align="left"/>
+			<Raw>1B2539002C0D0A0D0A0D0A0D0A0D0A0D0A0D0A0D0A0D0A1B2539001A0D0A</Raw>
+			<Span length="27"/>
+			<Span key="name" length="44" align="left"/>
+			<Span key="account" length="20" align="left"/>
+			<Raw>0D0A</Raw>
+			<Span length="27"/>
+			<Span key="ID_type" length="43" align="left"/>
+			<Raw>1C241A</Raw>
+			<Span key="ID_num" length="18" align="right"/>
+			<Raw>1C240D0D0A</Raw>
+			<Span length="27"/>
+			<Span key="agent_name" length="44" align="left"/>
+			<Span key="agent_ID_type" length="20" align="left"/>
+			<Raw>0D0A</Raw>
+			<Span length="27"/>
+			<Span key="agent_ID_num" length="44" align="left"/>
+			<Span key="telephone" length="20" align="left"/>
+			<Raw>1B2539001B0D0A</Raw>
+			<Span length="29"/>
+			<Select key="change_type">
+				<Option value="1" length="21" rawtext="A1CC" align="left"/>
+				<Option value="2" length="21" rawtext="A1CC" align="left"/>
+				<Option value="3" length="2" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>0D0A</Raw>
+			<Span length="29"/>
+			<Select key="change_type">
+				<Option value="4" length="21" rawtext="A1CC" align="left"/>
+				<Option value="5" length="21" rawtext="A1CC" align="left"/>
+				<Option value="6" length="2" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>0D0A</Raw>
+			<Span length="29"/>
+			<Select key="change_type">
+				<Option value="7" length="21" rawtext="A1CC" align="left"/>
+				<Option value="8" length="21" rawtext="A1CC" align="left"/>
+				<Option value="9" length="2" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>1B253900210D0A</Raw>
+			<Span length="40"/>
+			<Span key="change_content" length="60" align="left"/>
+			<Raw>1B2539001B0D0A0D0A</Raw>
+			<Span length="37"/>
+			<Select key="account_type">
+				<Option value="1" length="9" rawtext="A1CC" align="left"/>
+				<Option value="2" length="9" rawtext="A1CC" align="left"/>
+				<Option value="3" length="14" rawtext="A1CC" align="left"/>
+				<Option value="4" length="18" rawtext="A1CC" align="left"/>
+				<Option value="5" length="2" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>1B253900100D0A</Raw>
+			<Span length="10"/>
+			<Select key="change_account">
+				<Option value="1" length="9" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>1B253900090D0A</Raw>
+			<Span length="37"/>
+			<Select key="or_range">
+				<Option value="1" length="13" rawtext="A1CC" align="left"/>
+				<Option value="2" length="12" rawtext="A1CC" align="left"/>
+				<Option value="3" length="7" rawtext="A1CC" align="left"/>
+				<Option value="4" length="2" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>1B253900150D0A</Raw>
+			<Span length="37"/>
+			<Select key="archived_type">
+				<Option value="1" length="13" rawtext="A1CC" align="left"/>
+				<Option value="2" length="12" rawtext="A1CC" align="left"/>
+				<Option value="3" length="13" rawtext="A1CC" align="left"/>
+				<Option value="4" length="2" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>0D0A</Raw>
+			<Span length="37"/>
+			<Select key="archived_period">
+				<Option value="1" length="13" rawtext="A1CC" align="left"/>
+				<Option value="2" length="12" rawtext="A1CC" align="left"/>
+				<Option value="3" length="8" rawtext="A1CC" align="left"/>
+				<Option value="4" length="9" rawtext="A1CC" align="left"/>
+				<Option value="5" length="9" rawtext="A1CC" align="left"/>
+				<Option value="6" length="2" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>0D0A</Raw>
+			<Span length="28"/>
+			<Select key="old_check">
+				<Option value="1" length="26" rawtext="A1CC" align="left"/>
+			</Select>
+			<Span key="old_account" length="33" align="left"/>
+			<Span key="old_name" length="16" align="left"/>
+			<Raw>0D0A</Raw>
+			<Span length="28"/>
+			<Select key="new_check">
+				<Option value="1" length="26" rawtext="A1CC" align="left"/>
+			</Select>
+			<Span key="new_account" length="33" align="left"/>
+			<Span key="new_name" length="16" align="left"/>
+			<Raw>0D0A</Raw>
+			<Span length="37"/>
+			<Select key="withdraw_interval">
+				<Option value="1" length="12" rawtext="A1CC" align="left"/>
+				<Option value="2" length="12" rawtext="A1CC" align="left"/>
+				<Option value="3" length="2" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>0D0A</Raw>
+			<Span length="37"/>
+			<Select key="cash_flag">
+				<Option value="1" length="12" rawtext="A1CC" align="left"/>
+				<Option value="2" length="2" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>1B2539001C0D0A</Raw>
+			<Span length="10"/>
+			<Select key="exchange">
+				<Option value="1" length="34" rawtext="A1CC" align="left"/>
+			</Select>
+			<Select key="exchange_reason">
+				<Option value="1" length="9" rawtext="A1CC" align="left"/>
+				<Option value="2" length="8" rawtext="A1CC" align="left"/>
+				<Option value="3" length="9" rawtext="A1CC" align="left"/>
+				<Option value="4" length="2" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>1B2539001C0D0A</Raw>
+			<Span length="31"/>
+			<Select key="change_person_name">
+				<Option value="1" length="52" rawtext="A1CC" align="left"/>
+			</Select>
+			<Span key="new_person_name" length="16" align="left"/>
+			<Raw>1B2539000C0D0A</Raw>
+			<Span length="10"/>
+			<Select key="change_person">
+				<Option value="1" length="52" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>1B2539000B0D0A</Raw>
+			<Span length="31"/>
+			<Select key="change_person_usefor">
+				<Option value="1" length="52" rawtext="A1CC" align="left"/>
+			</Select>
+			<Span key="new_person_usefor" length="16" align="left"/>
+			<Raw>1B253900170D0A</Raw>
+			<Span length="31"/>
+			<Select key="change_person_mobile">
+				<Option value="1" length="52" rawtext="A1CC" align="left"/>
+			</Select>
+			<Span key="new_person_mobile" length="16" align="left"/>
+			<Raw>1B2539001E0D0A</Raw>
+			<Span length="31"/>
+			<Select key="transfer_type">
+				<Option value="1" length="21" rawtext="A1CC" align="left"/>
+				<Option value="2" length="21" rawtext="A1CC" align="left"/>
+				<Option value="3" length="14" rawtext="A1CC" align="left"/>
+				<Option value="4" length="2" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>1B2539001F0D0A</Raw>
+			<Span length="31"/>
+			<Select key="transfer_type">
+				<Option value="5" length="13" rawtext="A1CC" align="left"/>
+				<Option value="6" length="17" rawtext="A1CC" align="left"/>
+				<Option value="7" length="22" rawtext="A1CC" align="left"/>
+				<Option value="8" length="2" rawtext="A1CC" align="left"/>
+			</Select>		
+			<Raw>1B2539000C0D0A</Raw>
+			<Span length="10"/>
+			<Select key="transfer">
+				<Option value="1" length="52" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>1B2539000E0D0A</Raw>
+			<Span length="44"/>
+			<Span key="transfer_old_account" length="35" align="left"/>
+			<Span key="transfer_new_account" length="20" align="left"/>		
+			<Raw>1B253900200D0A</Raw>
+			<Span length="10"/>
+			<Select key="change_pay">
+				<Option value="1" length="23" rawtext="A1CC" align="left"/>
+			</Select>
+			<Select key="change_pay_type">
+				<Option value="1" length="11" rawtext="A1CC" align="left"/>
+				<Option value="2" length="10" rawtext="A1CC" align="left"/>
+				<Option value="3" length="18" rawtext="A1CC" align="left"/>
+				<Option value="4" length="17" rawtext="A1CC" align="left"/>
+				<Option value="5" length="2" rawtext="A1CC" align="left"/>
+			</Select>		
+			<Raw>1B2539001D0D0A</Raw>
+			<Span length="10"/>
+			<Select key="addtran_type">
+				<Option value="1" length="21" rawtext="A1CC" align="left"/>
+				<Option value="2" length="14" rawtext="A1CC" align="left"/>
+				<Option value="3" length="2" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>0D0A</Raw>
+			<Span length="10"/>
+			<Select key="addtran_type">
+				<Option value="4" length="21" rawtext="A1CC" align="left"/>
+				<Option value="5" length="14" rawtext="A1CC" align="left"/>
+				<Option value="6" length="21" rawtext="A1CC" align="left"/>
+				<Option value="7" length="2" rawtext="A1CC" align="left"/>
+			</Select>			
+			<Raw>1B2539001D0D0A0D0A</Raw>
+			<Span length="33"/>
+			<Select key="interbus">
+				<Option value="1" length="33" rawtext="A1CC" align="left"/>
+				<Option value="2" length="2" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>1B253900200D0A</Raw>
+			<Span length="10"/>
+			<Select key="interbus_type">
+				<Option value="1" length="19" rawtext="A1CC" align="left"/>
+				<Option value="2" length="16" rawtext="A1CC" align="left"/>
+				<Option value="3" length="21" rawtext="A1CC" align="left"/>
+				<Option value="4" length="2" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>0D0A</Raw>
+			<Span length="10"/>
+			<Select key="interbus_type">
+				<Option value="5" length="35" rawtext="A1CC" align="left"/>
+				<Option value="6" length="2" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>1B253900220D0A</Raw>
+			<Span length="16"/>
+			<Span key="interbus_account" length="52" align="left"/>
+			<Span key="interbus_address" length="20" align="left"/>	
+			<Raw>0C0A</Raw>
+		</Page>
+	</Transaction>
+	<!--银行卡维护申请表-->
+	<Transaction code="7132^3340^3008">
+		<Page>
+			<Raw>1042</Raw>
+			<Raw>1B253900110D0A0D0A0D0A0D0A0D0A</Raw>
+			<Span length="42"/>
+			<Span key="sign_year" length="9" align="left"/>
+			<Span key="sign_month" length="7" align="left"/>
+			<Span key="sign_day" length="2" align="left"/>
+			<Raw>1B2539002B0D0A0D0A0D0A1B2539002A0D0A0D0A0D0A0D0A0D0A0D0A0D0A0D0A</Raw>
+			<Span length="34"/>
+			<Span key="name" length="35" align="left"/>
+			<Span key="account" length="20" align="left"/>	
+			<Raw>1B253900220D0A</Raw>
+			<Span length="34"/>
+			<Span key="ID_type" length="35" align="left"/>
+			<Span key="ID_num" length="20" align="left"/>	
+			<Raw>1B253900220D0A</Raw>
+			<Span length="34"/>
+			<Span key="agent_name" length="35" align="left"/>
+			<Span key="agent_ID_type" length="20" align="left"/>
+			<Raw>1B253900220D0A</Raw>
+			<Span length="34"/>
+			<Span key="agent_ID_num" length="35" align="left"/>
+			<Raw>1B253900210D0A0D0A</Raw>
+			<Span length="17"/>
+			<Select key="card_unlock">
+				<Option value="1" length="14" rawtext="A1CC" align="left"/>
+				<Option value="2" length="11" rawtext="A1CC" align="left"/>
+				<Option value="3" length="14" rawtext="A1CC" align="left"/>
+				<Option value="4" length="2" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>1B2539002B0D0A</Raw>
+			<Span length="33"/>
+			<Select key="card_change_reason">
+				<Option value="1" length="14" rawtext="A1CC" align="left"/>
+				<Option value="2" length="14" rawtext="A1CC" align="left"/>
+				<Option value="3" length="2" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>1B253900410D0A</Raw>
+			<Span length="33"/>
+			<Span key="card_change_pro" length="35" align="left"/>
+			<Raw>1B2539003E0D0A</Raw>
+			<Span length="33"/>
+			<Select key="card_change_type">
+				<Option value="1" length="9" rawtext="A1CC" align="left"/>
+				<Option value="2" length="2" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>1B2539001C0D0A</Raw>
+			<Span length="33"/>
+			<Select key="card_change_choosetype">
+				<Option value="1" length="14" rawtext="A1CC" align="left"/>
+				<Option value="2" length="26" rawtext="A1CC" align="left"/>
+			</Select>
+			<Span key="card_change_keyword" length="20" align="left"/>
+			<Raw>1B253900190D0A</Raw>
+			<Span length="33"/>
+			<Select key="card_change_choosetype">
+				<Option value="3" length="14" rawtext="A1CC" align="left"/>
+				<Option value="4" length="2" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>1B253900230D0A</Raw>
+			<Span length="33"/>
+			<Select key="card_destroy_reason">
+				<Option value="1" length="14" rawtext="A1CC" align="left"/>
+				<Option value="2" length="14" rawtext="A1CC" align="left"/>
+				<Option value="3" length="2" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>1B2539002A0D0A</Raw>
+			<Span length="33"/>
+			<Select key="card_destroy_type">
+				<Option value="1" length="16" rawtext="A1CC" align="left"/>
+				<Option value="2" length="17" rawtext="A1CC" align="left"/>
+				<Option value="3" length="2" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>1B2539002B0D0A</Raw>
+			<Span length="31"/>
+			<Span key="card_destroy_subcardnum" length="45" align="left"/>
+			<Span key="card_destroy_subcardname" length="20" align="left"/>
+			<Raw>1B253900260D0A</Raw>
+			<Span length="33"/>
+			<Select key="main_money">
+				<Option value="1" length="9" rawtext="A1CC" align="left"/>
+				<Option value="2" length="2" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>1B253900230D0A</Raw>
+			<Span length="33"/>
+			<Select key="e_money">
+				<Option value="1" length="9" rawtext="A1CC" align="left"/>
+				<Option value="2" length="2" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>0D0A</Raw>
+			<Span length="72"/>
+			<Span key="transfer_moneyin" length="49" align="left"/>
+			<Raw>0D0A</Raw>
+			<Span length="45"/>
+			<Span key="transfer_openbank" length="49" align="left"/>
+			<Raw>0D0A</Raw>
+			<Span length="45"/>
+			<Span key="transfer_account" length="49" align="left"/>
+			<Raw>0D0A</Raw>
+			<Span length="45"/>
+			<Span key="transfer_name" length="49" align="left"/>
+			<Raw>0C0A</Raw>
+		</Page>
+	</Transaction>
+	
+	<!--客户短信服务申请书-->
+	<Transaction code="0140">
+		<Page>
+			<Raw>1042</Raw>
+			<Raw>1B25390015</Raw>
+			<Raw>0D0A0D0A0D0A0D0A0D0A</Raw>
+			<Span key="sign_year" length="46" align="right"/>
+			<Span key="sign_month" length="8" align="right"/>
+			<Span key="sign_day" length="7" align="right"/>
+			<Raw>0D0A1B253900260D0A0D0A0D0A0D0A0D0A0D0A0D0A</Raw>
+			<Raw>1B253900250D0A0D0A0D0A</Raw>
+			<Span length="8"/>
+			<Select key="do">
+				<Option value="1" length="9" rawtext="A1CC" align="left"/>
+				<Option value="2" length="22" rawtext="A1CC" align="left"/>
+			</Select>
+			<Select key="customtype">
+				<Option value="1" length="15" rawtext="A1CC" align="left"/>
+				<Option value="2" length="15" rawtext="A1CC" align="left"/>
+				<Option value="3" length="15" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>0D0A</Raw>
+			<Span length="20"/>
+			<Span key="name" length="50" align="left"/>
+			<Raw>0D0A</Raw>
+			<Span length="20"/>
+			<Span key="ID_type" length="47" align="left"/>
+			<Span key="ID_num" length="35" align="left"/>
+			<Raw>0D0A</Raw>
+			<Span length="27"/>
+			<Select key="sign_type">
+				<Option value="1" length="19" rawtext="A1CC" align="left"/>
+				<Option value="2" length="2" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>0D0A</Raw>
+			<Span length="27"/>
+			<Select key="charge_type">
+				<Option value="1" length="12" rawtext="A1CC" align="left"/>
+				<Option value="2" length="23" rawtext="A1CC" align="left"/>
+			</Select>
+			<Span key="charge_account" length="40" align="left"/>
+			<Raw>0D0A</Raw>
+			<Span length="20"/>
+			<Span key="watch_account" length="37" align="left"/>
+			<Span key="nic_name" length="30" align="left"/>
+			<Span key="mobile" length="15" align="left"/>
+			<Raw>0D0A</Raw>
+			<Span length="30"/>
+			<Select key="service_type">
+				<Option value="1" length="7" rawtext="A1CC" align="left"/>
+				<Option value="2" length="9" rawtext="A1CC" align="left"/>
+				<Option value="3" length="24" rawtext="A1CC" align="left"/>
+			</Select>
+			<SpanMoney key="start_money" length="15" align="left"/>
+			<Raw>0D0A</Raw>
+			<Span length="30"/>
+			<Select key="service_period">
+				<Option value="1" length="12" rawtext="A1CC" align="left"/>
+				<Option value="2" length="30" rawtext="A1CC" align="left"/>
+			</Select>
+			<Select key="open_service">
+				<Option value="1" length="14" rawtext="A1CC" align="left"/>
+				<Option value="2" length="14" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>0C0A</Raw>
+		</Page>
+	</Transaction>
+	
+	<!--电子银行个人客户服务申请表  ！！！此单暂无交易码-->
+	<Transaction code="1001">
+		<Page>
+			<Raw>1042</Raw>
+			<Raw>1B2539001D</Raw>
+			<Raw>0D0A0D0A0D0A0D0A0D0A0D0A</Raw>
+			<Raw>1B253900260D0A</Raw>
+			<Span length="29"/>
+			<Span key="name" length="44" align="left"/>
+			<Span key="english_name" length="30" align="left"/>
+			<Raw>0D0A</Raw>
+			<Span length="29"/>
+			<Select key="ID_type">
+				<Option value="1" length="45" rawtext="A1CC" align="left"/>
+			</Select>
+			<Span key="ID_num" length="30" align="left"/>
+			<Raw>0D0A</Raw>
+			<Span length="29"/>
+			<Span key="mobile" length="44" align="left"/>
+			<Span key="address" length="30" align="left"/>
+			<Raw>1B253900200D0A</Raw>
+			<Span length="29"/>
+			<Span key="account1" length="52" align="left"/>
+			<Select key="account1_sign">
+				<Option value="1" length="11" rawtext="A1CC" align="left"/>
+				<Option value="2" length="11" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>1B253900170D0A</Raw>
+			<Span length="81"/>
+			<Select key="account1_cancel">
+				<Option value="1" length="11" rawtext="A1CC" align="left"/>
+				<Option value="2" length="11" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>1B2539001D0D0A</Raw>
+			<Span length="29"/>
+			<Span key="account2" length="52" align="left"/>
+			<Select key="account2_sign">
+				<Option value="1" length="11" rawtext="A1CC" align="left"/>
+				<Option value="2" length="11" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>1B253900170D0A</Raw>
+			<Span length="81"/>
+			<Select key="account2_cancel">
+				<Option value="1" length="11" rawtext="A1CC" align="left"/>
+				<Option value="2" length="11" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>1B2539001D0D0A</Raw>
+			<Span length="29"/>
+			<Span key="account3" length="52" align="left"/>
+			<Select key="account3_sign">
+				<Option value="1" length="11" rawtext="A1CC" align="left"/>
+				<Option value="2" length="11" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>1B253900170D0A</Raw>
+			<Span length="81"/>
+			<Select key="account3_cancel">
+				<Option value="1" length="11" rawtext="A1CC" align="left"/>
+				<Option value="2" length="11" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>1B253900240D0A</Raw>
+			<Span length="32"/>
+			<Select key="ebank_sign">
+				<Option value="1" length="15" rawtext="A1CC" align="left"/>
+				<Option value="2" length="15" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>1B2539002c0D0A</Raw>
+			<Span length="20"/>
+			<Select key="ebank_modify">
+				<Option value="1" length="24" rawtext="A1CC" align="left"/>
+				<Option value="2" length="18" rawtext="A1CC" align="left"/>
+				<Option value="3" length="26" rawtext="A1CC" align="left"/>
+				<Option value="4" length="20" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>1B253900170D0A</Raw>
+			<Span length="20"/>
+			<Select key="ebank_modify">
+				<Option value="5" length="24" rawtext="A1CC" align="left"/>
+				<Option value="6" length="18" rawtext="A1CC" align="left"/>
+				<Option value="7" length="26" rawtext="A1CC" align="left"/>
+				<Option value="8" length="20" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>0D0A</Raw>
+			<Span length="20"/>
+			<Select key="ebank_modify">
+				<Option value="9" length="24" rawtext="A1CC" align="left"/>
+				<Option value="10" length="18" rawtext="A1CC" align="left"/>
+				<Option value="11" length="26" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>0D0A</Raw>
+			<Span length="20"/>
+			<Select key="ebank_modify">
+				<Option value="12" length="42" rawtext="A1CC" align="left"/>
+				<Option value="13" length="26" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>1B253900280D0A</Raw>
+			<Span length="20"/>
+			<Select key="ebank_cancel">
+				<Option value="1" length="24" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>1B2539002F0D0A</Raw>
+			<Span length="32"/>
+			<Select key="mbank_connect">
+				<Option value="1" length="15" rawtext="A1CC" align="left"/>
+				<Option value="2" length="15" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>0D0A</Raw>
+			<Span length="31"/>
+			<Span key="mbank_mobile" length="46" align="left"/>
+			<Select key="mbank_IPS">
+				<Option value="1" length="9" rawtext="A1CC" align="left"/>
+				<Option value="2" length="9" rawtext="A1CC" align="left"/>
+				<Option value="3" length="2" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>0D0A</Raw>
+			<Span length="53"/>
+			<Span key="client_single_money" length="37" align="left"/>
+			<Span key="client_day_money" length="3" align="left"/>
+			<Raw>0D0A</Raw>
+			<Span length="53"/>
+			<Span key="card_single_money" length="37" align="left"/>
+			<Span key="card_day_money" length="3" align="left"/>
+			<Raw>1B253900200D0A</Raw>
+			<Span length="20"/>
+			<Select key="new_type">
+				<Option value="1" length="22" rawtext="A1CC" align="left"/>
+			</Select>
+			<Span key="new_mobile" length="29" align="left"/>
+			<Select key="new_IPS">
+				<Option value="1" length="9" rawtext="A1CC" align="left"/>
+				<Option value="2" length="9" rawtext="A1CC" align="left"/>
+				<Option value="3" length="2" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>1B253900170D0A</Raw>
+			<Span length="20"/>
+			<Select key="new_type">
+				<Option value="2" length="32" rawtext="A1CC" align="left"/>
+				<Option value="3" length="30" rawtext="A1CC" align="left"/>
+				<Option value="4" length="19" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>0D0A</Raw>
+			<Span length="20"/>
+			<Select key="new_type">
+				<Option value="5" length="32" rawtext="A1CC" align="left"/>
+				<Option value="6" length="30" rawtext="A1CC" align="left"/>
+				<Option value="7" length="19" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>0D0A</Raw>
+			<Span length="20"/>
+			<Select key="new_type">
+				<Option value="8" length="32" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>1B253900280D0A</Raw>
+			<Span length="20"/>
+			<Select key="mbank_cancel">
+				<Option value="1" length="19" rawtext="A1CC" align="left"/>
+				<Option value="2" length="19" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>0C0A</Raw>
+		</Page>
+	</Transaction>
+	
+	<!--个人账户开户及综合服务申请表-->
+	<Transaction code="1052^3002">
+		<Page>
+			<Raw>1042</Raw>
+			<Raw>1B2539001D</Raw>
+			<Raw>0D0A0D0A0D0A</Raw>
+			<Raw>1B2539000F0D0A</Raw>
+			<Span length="17"/>
+			<Span key="base_name" length="18" align="left"/>
+			<Span key="base_engname" length="16" align="left"/>
+			<Select key="base_sex">
+				<Option value="1" length="4" rawtext="A1CC" align="left"/>
+				<Option value="2" length="11" rawtext="A1CC" align="left"/>
+			</Select>
+			<Span key="base_birth_year" length="5" align="left"/>
+			<Span key="base_birth_month" length="3" align="left"/>
+			<Span key="base_birth_day" length="2" align="left"/>
+			<Raw>1B2539001D0D0A</Raw>
+			<Span length="17"/>
+			<Span key="base_ID_type" length="18" align="left"/>
+			<Raw>1C241F</Raw>
+			<Span key="base_ID_num" length="18" align="left"/>
+			<Raw>1C240D</Raw>
+			<Raw>0D0A</Raw>
+			<Span length="17"/>
+			<Span key="base_telephone" length="18" align="left"/>
+			<Span key="base_mobile" length="17" align="left"/>
+			<Span key="base_org" length="28" align="left"/>
+			<Raw>0D0A0D0A</Raw>
+			<Span length="17"/>
+			<Span key="base_home_address" length="49" align="left"/>
+			<Span key="base_home_postal" length="10" align="left"/>
+			<Raw>0D0A1B2539001A0D0A</Raw>
+			<Span length="18"/>
+			<Select key="industry">
+				<Option value="1" length="16" rawtext="A1CC" align="left"/>
+				<Option value="2" length="8" rawtext="A1CC" align="left"/>
+				<Option value="3" length="9" rawtext="A1CC" align="left"/>
+				<Option value="4" length="4" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>0D0A</Raw>
+			<Span length="18"/>
+			<Select key="industry">
+				<Option value="5" length="9" rawtext="A1CC" align="left"/>
+				<Option value="6" length="14" rawtext="A1CC" align="left"/>
+				<Option value="7" length="22" rawtext="A1CC" align="left"/>
+				<Option value="8" length="4" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>0D0A</Raw>
+			<Span length="18"/>
+			<Select key="industry">
+				<Option value="9" length="25" rawtext="A1CC" align="left"/>
+				<Option value="10" length="8" rawtext="A1CC" align="left"/>
+				<Option value="11" length="11" rawtext="A1CC" align="left"/>
+				<Option value="12" length="4" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>0D0A</Raw>
+			<Span length="18"/>
+			<Select key="industry">
+				<Option value="13" length="17" rawtext="A1CC" align="left"/>
+				<Option value="14" length="21" rawtext="A1CC" align="left"/>
+				<Option value="15" length="4" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>0D0A</Raw>
+			<Span length="18"/>
+			<Select key="industry">
+				<Option value="16" length="6" rawtext="A1CC" align="left"/>
+				<Option value="17" length="14" rawtext="A1CC" align="left"/>
+				<Option value="18" length="16" rawtext="A1CC" align="left"/>
+				<Option value="19" length="4" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>1B2539001D0D0A</Raw>
+			<Span length="18"/>
+			<Select key="industry">
+				<Option value="20" length="4" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>0D0A</Raw>
+			<Span length="18"/>
+			<Select key="job">
+				<Option value="1" length="33" rawtext="A1CC" align="left"/>
+				<Option value="2" length="11" rawtext="A1CC" align="left"/>
+				<Option value="3" length="4" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>0D0A</Raw>
+			<Span length="18"/>
+			<Select key="job">
+				<Option value="4" length="13" rawtext="A1CC" align="left"/>
+				<Option value="5" length="23" rawtext="A1CC" align="left"/>
+				<Option value="6" length="4" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>0D0A</Raw>
+			<Span length="18"/>
+			<Select key="job">
+				<Option value="7" length="5" rawtext="A1CC" align="left"/>
+				<Option value="8" length="4" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>1B2539001D0D0A0D0A</Raw>
+			<Span length="31"/>
+			<Select key="agent_type">
+				<Option value="1" length="15" rawtext="A1CC" align="left"/>
+				<Option value="2" length="4" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>1B2539001E0D0A</Raw>
+			<Span length="17"/>
+			<Span key="agent_name" length="22" align="left"/>
+			<Select key="agent_sex">
+				<Option value="1" length="5" rawtext="A1CC" align="left"/>
+				<Option value="2" length="17" rawtext="A1CC" align="left"/>
+			</Select>
+			<Span key="agent_relationship" length="16" align="left"/>
+			<Raw>0D0A</Raw>
+			<Span length="17"/>
+			<Span key="agent_ID_type" length="18" align="left"/>
+			<Raw>1C241F</Raw>
+			<Span key="agent_ID_num" length="18" align="left"/>
+			<Raw>1C240D</Raw>
+			<Raw>0D0A</Raw>
+			<Span length="17"/>
+			<Span key="agent_reason" length="60" align="left"/>
+			<Raw>0D0A</Raw>
+			<Span length="17"/>
+			<Span key="agent_telephone" length="27" align="left"/>
+			<Span key="agent_address" length="30" align="left"/>
+			<Raw>0D0A0D0A</Raw>
+			<Span length="19"/>
+			<Select key="business_accounttype">
+				<Option value="2" length="10" rawtext="A1CC" align="left"/>
+			</Select>
+			<Span key="business_proname" length="30" align="left"/>
+			<Raw>0D0A</Raw>
+			<Span length="19"/>
+			<Select key="business_accounttype">
+				<Option value="1" length="10" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>1B253900230D0A</Raw>
+			<Span length="28"/>
+			<Select key="business_cardtype">
+				<Option value="1" length="15" rawtext="A1CC" align="left"/>
+				<Option value="2" length="4" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>0C</Raw>
+		</Page>
+	</Transaction>
+	<!--挂失/解挂申请表-->
+	<Transaction code="7126^7128^7127^7129">
+		<Page>
+			<Raw>1042</Raw>
+			<Raw>1B25390010</Raw>
+			<Raw>0D0A0D0A0D0A0D0A0D0A</Raw>
+			<Span length="41"/>
+			<Span key="sign_year" length="9" align="left"/>
+			<Span key="sign_month" length="6" align="left"/>
+			<Span key="sign_day" length="2" align="left"/>
+			<Raw>0D0A</Raw>
+			<Raw>1B253900200D0A</Raw>
+			<Raw>1B2539001E0D0A0D0A0D0A0D0A0D0A0D0A0D0A0D0A0D0A</Raw>
+			<Span length="23"/>
+			<Select key="option">
+				<Option value="1" length="7" rawtext="A1CC" align="left"/>
+				<Option value="2" length="7" rawtext="A1CC" align="left"/>
+				<Option value="3" length="14" rawtext="A1CC" align="left"/>
+				<Option value="4" length="7" rawtext="A1CC" align="left"/>
+				<Option value="5" length="8" rawtext="A1CC" align="left"/>
+				<Option value="6" length="7" rawtext="A1CC" align="left"/>
+			</Select>
+			<Span key="other" length="30" align="left"/>
+			<Raw>0D0A</Raw>
+			<Span length="23"/>
+			<Select key="type">
+				<Option value="1" length="7" rawtext="A1CC" align="left"/>
+				<Option value="2" length="12" rawtext="A1CC" align="left"/>
+				<Option value="3" length="20" rawtext="A1CC" align="left"/>
+				<Option value="4" length="11" rawtext="A1CC" align="left"/>
+				<Option value="5" length="2" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>1B253900160D0A</Raw>
+			<Span length="31"/>
+			<Select key="close_state">
+				<Option value="1" length="9" rawtext="A1CC" align="left"/>
+				<Option value="2" length="12" rawtext="A1CC" align="left"/>
+				<Option value="3" length="2" rawtext="A1CC" align="left"/>
+			</Select>
+			<Raw>1B2539001A0D0A</Raw>
+			<Span length="27"/>
+			<Select key="days">
+				<Option value="1" length="6" rawtext="A1CC" align="left"/>
+				<Option value="2" length="5" rawtext="A1CC" align="left"/>
+			</Select>
+			<Span key="days_num" length="4" align="left"/>
+			<Raw>1B253900210D0A</Raw>
+			<Span length="17"/>
+			<Span key="name" length="24" align="left"/>
+			<Span key="account" length="25" align="left"/>
+			<Raw>0D0A</Raw>
+			<Span length="27"/>
+			<SpanMoney key="remain" length="23" align="left"/>
+			<Span key="open_date" length="20" align="left"/>
+			<Raw>1B253900290D0A</Raw>
+			<Span length="28"/>
+			<Span key="ID_type" length="16" align="left"/>
+			<Raw>1C2419</Raw>
+			<Span key="ID_num" length="18" align="left"/>
+			<Raw>1C240D</Raw>
+			<Span length="10"/>
+			<Span key="ID_org" length="20" align="left"/>
+			<Raw>1B2539001F0D0A</Raw>
+			<Span length="22"/>
+			<Span key="ID_address" length="67" align="left"/>
+			<Span key="telephone" length="20" align="left"/>
+			<Raw>0D0A</Raw>
+			<Span length="22"/>
+			<Span key="address" length="67" align="left"/>
+			<Span key="mobile" length="20" align="left"/>
+			<Raw>1B2539002B0D0A</Raw>
+			<Span length="24"/>
+			<Span key="agent_name" length="20" align="left"/>
+			<Raw>1B253900200D0A</Raw>
+			<Span length="22"/>
+			<Span key="agent_ID_type" length="22" align="left"/>
+			<Raw>1C2419</Raw>
+			<Span key="agent_ID_num" length="18" align="left"/>
+			<Raw>1C240D</Raw>
+			<Span length="10"/>
+			<Span key="agent_ID_org" length="20" align="left"/>
+			<Raw>1B253900240D0A</Raw>
+			<Span length="22"/>
+			<Span key="agent_address" length="67" align="left"/>
+			<Span key="agent_telephone" length="20" align="left"/>
+			<Raw>0C0A</Raw>
+		</Page>
+	</Transaction>
+</Print>

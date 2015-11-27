@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/update_pop_bak"
+    android:orientation="vertical" >
+    
+	<Button 
+	    android:id="@+id/show"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="升级金融和打印模块"
+		android:textSize="24sp"
+	    />
+	
+	<Button 
+	    android:id="@+id/fire"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="升级金融模块"
+	    android:textSize="24sp"
+	    />
+	
+	<Button 
+	    android:id="@+id/prineter"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="升级打印模块"
+	    android:textSize="24sp"
+	    />
+	<Button 
+	    android:id="@+id/app"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="升级app"
+	    android:textSize="24sp"
+
+	    />
+</LinearLayout>

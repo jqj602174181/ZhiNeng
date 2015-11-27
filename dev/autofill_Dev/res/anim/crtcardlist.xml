@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>  
+
+ <animation-list  
+     xmlns:android="http://schemas.android.com/apk/res/android"  
+     android:oneshot="false" >  
+    <item android:drawable="@drawable/crt1" android:duration="500"></item>  
+    <item android:drawable="@drawable/crt2" android:duration="500"></item>  
+    <item android:drawable="@drawable/crt3" android:duration="500"></item>  
+    <item android:drawable="@drawable/crt4" android:duration="500"></item>  
+    <item android:drawable="@drawable/crt5" android:duration="500"></item>  
+    <item android:drawable="@drawable/crt6" android:duration="500"></item>  
+    <item android:drawable="@drawable/crt7" android:duration="500"></item>  
+    <item android:drawable="@drawable/crt8" android:duration="500"></item>  
+ </animation-list>  

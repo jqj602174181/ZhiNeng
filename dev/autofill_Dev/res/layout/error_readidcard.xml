@@ -1,0 +1,81 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/transparent1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout     
+    android:id="@+id/VIEW_CONTENT"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+   
+ 
+    <TextView android:id="@+id/LABEL_RETURN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    	android:layout_marginLeft="60dp"
+	    android:layout_marginTop="40dp"
+        android:textSize="30sp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:drawableLeft="@drawable/btn_ret"
+        android:drawablePadding="10dp"
+        android:textColor="@color/lightwhite"
+        android:text="@string/goback"
+        />
+	
+    <!-- 中间的超时提示 -->
+    <RelativeLayout android:id="@+id/BLOCK_TIMEOUT"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="170dp"
+        android:background="@drawable/block_bg_white">
+        <ImageView
+	        android:id="@+id/IMG_ERRORMARK"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="40dp"
+	        android:layout_centerHorizontal="true"
+	        android:scaleType="fitCenter"
+	        android:src="@drawable/errormark"/>
+        
+        <TextView android:id="@+id/LABEL_ERRTIP"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/IMG_ERRORMARK"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="20dp"
+	        android:textSize="24sp"
+	        android:textColor="@color/pure_black"
+	        android:text="身份证信息读取失败"
+	        />
+        
+    </RelativeLayout>
+    
+    <!-- 超时 -->
+    <TextView android:id="@+id/LABEL_TIMEMOUT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BLOCK_TIMEOUT"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="24sp"
+        android:textColor="@color/lightwhite"
+        android:text="超时"
+        />
+    
+    <!-- 重新读取的按钮 -->
+    <Button android:id="@+id/BTN_READ"
+        android:layout_width="260dp"
+        android:layout_height="72dp"
+        android:layout_below="@id/LABEL_TIMEMOUT"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textSize="28sp"
+        android:text="@string/touch_reread"
+        android:background="@drawable/btn1_selector"
+        android:textColor="@color/lightwhite"/>
+
+</RelativeLayout>
+</FrameLayout>

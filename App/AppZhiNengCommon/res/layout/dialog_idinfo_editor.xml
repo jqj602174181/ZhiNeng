@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="600dp"
+    android:layout_height="460dp"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical">
+    
+    <!-- 标题 -->
+    <TextView android:id="@+id/LABEL_TITLE"
+        android:text="请填写客户身份证信息"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textColor="@color/text_color"
+        android:textSize="27sp"
+        android:gravity="center"
+        android:paddingLeft="20dp"/>
+   
+    <include layout="@layout/block_separator_line"/>
+    
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp" >        
+	    <!-- 姓名 -->
+	    <TextView android:id="@+id/LABEL_NAME"
+	        style="@style/LabelBeforeEditStyle"        
+	        android:text="姓名:"
+	    	android:layout_width="160dp"/>
+	    
+	    <EditText android:id="@+id/EDIT_NAME"
+		    style="@style/NameEditTextStyle" 
+		    android:layout_width="300dp"
+		     android:hint="请输入姓名"
+		    android:background="@drawable/edit_input" 
+	    	/>	    
+   	</LinearLayout>
+   	
+    <!-- 身份证号 -->
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp" >   
+	    <TextView android:id="@+id/LABEL_NUMBER"
+	        style="@style/LabelBeforeEditStyle"        
+	        android:text="身份证号:"
+	    	android:layout_width="160dp"/>
+	    
+	    <EditText android:id="@+id/EDIT_NUMBER"
+		    style="@style/AccountEditTextStyle" 
+		    android:layout_width="300dp"
+		    android:hint="请输入身份证号"
+		    android:maxLength="18"
+		    android:background="@drawable/edit_input" 
+	    	/>	    
+   	</LinearLayout>
+   	
+    <!-- 发证机关 -->
+   	<LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp" >
+	    <TextView android:id="@+id/LABEL_POLICE"
+	        style="@style/LabelBeforeEditStyle"        
+	        android:text="发证机关:"
+	    	android:layout_width="160dp"/>
+	    
+	    <EditText android:id="@+id/EDIT_POLICE"
+		    style="@style/NameEditTextStyle" 
+		    android:layout_width="300dp"
+		     android:hint="请输入发证机关"
+		    android:background="@drawable/edit_input" 
+	    	/>	    
+   	</LinearLayout>
+   
+    <Button android:id="@+id/BTN_OK"
+        android:text="提交"
+        android:textSize="26sp"
+        android:textColor="@color/text_color"
+        android:background="@drawable/btn_white"
+        android:layout_height="50dp"
+        android:layout_width="120dp"        
+   	    android:layout_marginTop="30dp"
+   	    android:layout_marginLeft="350dp"
+       />
+
+</LinearLayout>
+

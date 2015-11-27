@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AutoFillDev</string>
+    <string name="commit_data">正在向服务器提交交易...</string>
+    <string name="enter">确定</string>
+    <string name="goback">返回</string>
+    <string name="goint_to_print">提交成功，正在准备打印...</string>
+    <string name="print_end">打印完成，请撕纸</string>
+    <string name="print_number">凭条打印中...</string>
+    <string name="skip">跳过</string>
+    <string name="ten_second_exit">10秒后将退出</string>
+    <string name="touch_reread">点击重新读取</string>
+    <string name="touch_print">点击开始打印</string>
+    <string name="tip_cancel_readidcard">提示：若您未随身携带身份证，可选择跳过。部分必需身份证的交易将无法办理。</string>   
+    <string name="connect_error">与服务端连接失败</string>
+    <string name="registerError">注册失败</string>
+    <string name="onlineError">上线失败</string>
+    <string name="outlineError">下线失败</string>
+    <string name="registerSuccess">注册成功</string>
+    <string name="onlineSuccess">上线成功</string>
+    <string name="outlineSuccess">下线成功</string>
+    <string name="readCard">刷磁条卡</string>
+    <string name="readICCard">插IC卡</string>
+</resources>

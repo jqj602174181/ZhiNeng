@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <color name="layout_bk_color">#fff2f1f1</color>
+   <color name="text_color">#333333</color>
+	<color name="text_normal">#333333</color>
+    <color name="text_unselected">#555555</color>
+    <color name="text_disabled">#bbbbbb</color>
+	
+</resources>

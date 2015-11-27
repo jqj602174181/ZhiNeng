@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AutoFillSetting</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="update_version">更新版本</string>
+    <string name="save">保存</string>
+    <string name="org_id">机构号：</string>
+    <string name="netmask">子网掩码：</string>
+    <string name="default_gateway">默认网关：</string>
+    <string name="hecha_ip">联网核查IP：</string>
+    <string name="hecha_port">核查端口：</string>
+    <string name="server_ip">服务端IP：</string>
+    <string name="server_port">服务端口：</string>
+    <string name="tip_newest_version">目前已经是最新版本了</string>
+    <string name="check_newversion">检测新版本中...</string>
+    <string name="update_now">更新金融模块</string>
+      <string name="update_printer">更新打印模块</string>
+        <string name="update_app">更新应用程序模块</string>
+    <string name="local_ip">本地IP：</string>
+    <string name="check_network">检测通信</string>
+    <string name="client_info">客户信息</string>
+    <string name="system_setting">系统设置</string>
+    <string name="system_update">系统升级</string>
+	<string name="clientName">客户名称</string>
+	<string name="isPublic">是否对公</string>
+	<string name="isPersonal">是否个人</string>
+	<string name="isFinancial">是否理财</string>
+	
+	<string name="update">正在升级...</string>
+    <string name="updateNew">发现新版本是否立即更新</string>
+    <string name="updataHint">更新提示</string>
+    <string name="tenSecond">秒后系统自动更新</string>
+    <string name="updateRightNow">立即更新</string>
+    <string name="updateAfter">稍后更新</string>
+    <string name="updateSuccess">固件更新成功</string>
+    <string name="updateClose">秒后对话框将自动关闭</string>
+    <string name="updateError">更新出错</string>
+    <string name="tenSecond1">秒后系统将自动重试</string>
+    <string name="close">关闭</string>  
+   <string name="tryAgain">立即重试</string>  
+	
+</resources>

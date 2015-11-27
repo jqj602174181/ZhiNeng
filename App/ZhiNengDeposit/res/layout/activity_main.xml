@@ -1,0 +1,161 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 身份证信息 -->
+
+    <include
+        android:id="@+id/FRAGMENT_IDCARDINFO"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="15dp"
+        layout="@layout/fragment_idinfo_layout" />
+
+    <LinearLayout
+        android:layout_width="1000dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/dottedline"
+        android:orientation="vertical" >
+
+        <!-- 是否有带卡折 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal" >
+
+            <com.centerm.autofill.appframework.view.CTTextView
+                style="@style/TextViewStyle"
+                android:layout_width="200dp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/has_card" />
+
+            <RadioGroup
+                android:id="@+id/RG_HAVECARD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/RB_HASCARD"
+                    style="@style/RBFixedHMRStyle1"
+                    android:checked="true"
+                    android:text="@string/have" />
+
+                <RadioButton
+                    android:id="@+id/RB_NOCARD"
+                    style="@style/RBFixedHMRStyle1"
+                    android:text="@string/nohave" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- 帐/卡号 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal" >
+
+            <com.centerm.autofill.appframework.view.CTTextView
+                style="@style/TextViewStyle"
+                android:layout_width="200dp"
+                android:layout_marginLeft="10dp"
+                android:text="*帐/卡号：" />
+
+            <EditText
+                android:id="@+id/EDIT_AccountName"
+                style="@style/NameEditTextStyle"
+                android:layout_width="250dp"
+                android:layout_marginLeft="20dp"
+                android:hint="@string/input_name" />
+
+            <EditText
+                android:id="@+id/EDIT_AccountNo"
+                style="@style/AccountEditTextStyle"
+                android:layout_width="350dp"
+                android:layout_marginLeft="20dp" />
+
+            <Button
+                android:id="@+id/BTN_ReadMagcard"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/nmnx_small_btn_selector"
+                android:text="读卡"
+                android:textColor="@android:color/white"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <!-- 存款金额 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal" >
+
+            <com.centerm.autofill.appframework.view.CTTextView
+                style="@style/TextViewStyle"
+                android:layout_width="200dp"
+                android:layout_marginLeft="10dp"
+                android:text="*存款金额：" />
+
+            <EditText
+                android:id="@+id/EDIT_AMOUNT"
+                style="@style/MoneyEditTextStyle"
+                android:layout_width="200dp"
+                android:layout_marginLeft="20dp" />
+        </LinearLayout>
+
+        <!-- 户主联系电话 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal" >
+
+            <com.centerm.autofill.appframework.view.CTTextView
+                style="@style/TextViewStyle"
+                android:layout_width="200dp"
+                android:layout_marginLeft="10dp"
+                android:text="*户主联系电话：" />
+
+            <EditText
+                android:id="@+id/EDIT_MobileNo"
+                style="@style/PhoneEditTextStyle"
+                android:layout_width="250dp"
+                android:layout_marginLeft="20dp" />
+        </LinearLayout>
+
+        <!-- 办理人 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/block_ransaction_layout" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

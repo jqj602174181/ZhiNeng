@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="700dp"
+    android:layout_height="290dp"
+    android:background="@drawable/dialog_bg" >
+    
+    <!-- 标题 -->
+    <TextView android:id="@+id/LABEL_TITLE"
+        android:text="@string/update_version"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColor="@color/lightwhite"
+        android:textSize="27sp"
+        android:background="@drawable/dialog_title_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"/>
+    <!-- 倒计时 -->
+    <ImageView android:id="@+id/IMG_COUNTDOWN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/LABEL_COUNTDOWN"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/clock"
+        android:visibility="invisible"/>
+    <TextView android:id="@+id/LABEL_COUNTDOWN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:textSize="30sp"
+        android:text="5"
+        android:textColor="@color/lightwhite"
+        android:visibility="invisible"/>
+    
+    <!-- 进度条 -->
+    <ProgressBar android:id="@+id/PROGRESSBAR"
+        style="@android:style/Widget.ProgressBar.Horizontal" 
+        android:layout_width="560dp"
+        android:layout_height="46dp"
+        android:layout_below="@id/LABEL_TITLE"
+        android:layout_marginTop="34dp"
+    	android:layout_marginLeft="40dp" 
+    	android:background="@drawable/pop_progress_bg"
+    	android:progressDrawable="@drawable/progress_bar"
+    	android:max="100"
+    	android:progress="0"/>
+    
+    <TextView android:id="@+id/LABEL_PROGRESS"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_alignTop="@id/PROGRESSBAR"
+        android:layout_centerHorizontal="true"
+        android:text="60%"
+        android:textColor="@color/lightwhite"
+        android:textSize="27sp"
+        android:paddingTop="5dp"/>
+    
+    <!-- 提示信息 -->
+    <TextView android:id="@+id/LABEL_TIP"
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColor="#a1a1a1"
+        android:textSize="27sp"
+        android:gravity="left"
+        android:layout_below="@id/PROGRESSBAR"
+        android:layout_marginTop="20dp"
+        android:layout_alignLeft="@id/PROGRESSBAR"/>
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 河南农信checkbox选择器 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/cbx_checked_pressed" android:state_checked="true" android:state_pressed="true"/>
+    <item android:drawable="@drawable/cbx_unchecked_pressed" android:state_checked="false" android:state_pressed="true"/>
+    <item android:checked="true" android:drawable="@drawable/cbx_checked_disabled" android:state_enabled="false"/>
+    <item android:checked="false" android:drawable="@drawable/cbx_unchecked_disabled" android:state_enabled="false"/>
+    <item android:drawable="@drawable/cbx_unchecked" android:state_checked="false"/>
+    <item android:drawable="@drawable/cbx_checked" android:state_checked="true"/>
+
+</selector>

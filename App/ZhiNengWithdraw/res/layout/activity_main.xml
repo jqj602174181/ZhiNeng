@@ -1,0 +1,140 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 身份证信息 -->
+
+    <include
+        android:id="@+id/FRAGMENT_IDCARDINFO"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="15dp"
+        layout="@layout/fragment_idinfo_layout" />
+
+    <LinearLayout
+        android:layout_width="1000dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/dottedline"
+        android:orientation="vertical" >
+
+        <!-- 账户类型 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal" >
+
+            <com.centerm.autofill.appframework.view.CTTextView
+                android:id="@+id/LABEL_PayeeAccounts"
+                style="@style/TextViewStyle"
+                android:layout_marginLeft="45dp"
+                android:text="*账户类型：" />
+
+            <RadioGroup
+                android:id="@+id/RG_CardStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/RB_AccountStyleCard"
+                    style="@style/RBFixedHMRStyle1"
+                    android:checked="true"
+                    android:text="卡" />
+
+                <RadioButton
+                    android:id="@+id/RB_AccountStyleZhe"
+                    style="@style/RBFixedHMRStyle1"
+                    android:text="存折" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- 取款金额 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal" >
+
+            <com.centerm.autofill.appframework.view.CTTextView
+                style="@style/TextViewStyle"
+                android:layout_marginLeft="45dp"
+                android:text="*取款金额：" />
+
+            <EditText
+                android:id="@+id/EDIT_Money"
+                style="@style/MoneyEditTextStyle"
+                android:layout_width="200dp"
+                android:layout_marginLeft="20dp" />
+        </LinearLayout>
+
+        <!-- 支取方式 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal" >
+
+            <com.centerm.autofill.appframework.view.CTTextView
+                style="@style/TextViewStyle"
+                android:layout_marginLeft="45dp"
+                android:text="*支取方式：" />
+
+            <RadioGroup
+                android:id="@+id/RG_WithdrawType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/RB_Password"
+                    style="@style/RBFixedHMRStyle1"
+                    android:checked="true"
+                    android:text="密码" />
+
+                <RadioButton
+                    android:id="@+id/RB_Certificate"
+                    style="@style/RBFixedHMRStyle1"
+                    android:text="证件"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/RB_NoPassword"
+                    style="@style/RBFixedHMRStyle1"
+                    android:text="无印密"
+                    android:visibility="gone" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- 办理人 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/block_ransaction_layout" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

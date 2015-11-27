@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.centerm.autofill.dev"
+    android:versionCode="3"
+    android:versionName="1.0.2" >
+
+    <!-- 该权限用于id卡读卡操作 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:name="com.centerm.autofill.dev.ContextUtil"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.centerm.autofill.dev.test.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.centerm.autofill.dev.idcard.ReadIDCardActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/download_dialog" >
+        </activity>
+        <activity
+            android:name="com.centerm.autofill.dev.magcard.ReadMagCardActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/download_dialog" >
+        </activity>
+        <activity
+            android:name="com.centerm.autofill.dev.commit.CommitActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/download_dialog" >
+        </activity>
+        <activity
+            android:name="com.centerm.autofill.dev.printer.PrinterActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/download_dialog" >
+        </activity>
+
+        <receiver
+            android:name="com.centerm.autofill.dev.BootCompletedReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.centerm.autofill.dev.comm.DeviceRegisterReceiver"
+            android:process=":DeviceRegister" >
+            <intent-filter>
+                <action android:name="com.centerm.autofill.DeviceRegister" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.centerm.autofill.dev.iccard.ReadICCardActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/download_dialog" >
+        </activity>
+        <activity
+            android:name="com.centerm.autofill.dev.card.CardSelectActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/download_dialog" >
+        </activity>
+        <activity
+            android:name="com.centerm.autofill.dev.crt.ReadCrtActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/download_dialog" >
+        </activity>
+        
+        <activity
+            android:name="com.centerm.autofill.dev.test.testPrintActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/download_dialog" >
+        </activity>
+    </application>
+
+</manifest>

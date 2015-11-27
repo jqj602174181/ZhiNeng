@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">包头农商银行免填单应用</string>
+    <string name="errtip_phone">请填写正确的交易人联系电话！</string>
+    <string name="proxyPhone">代理人电话:</string>
+    <string name="proxyInformation">代理人信息</string>
+    <string name="ransaction">*办理人：</string>
+    <string name="selfTransaction">本人办理</string>
+    <string name="proxyTransaction">代理人办理</string>
+    <string name="readcard">读卡</string>
+    <string name="readidcard">点击读取身份证</string>
+    <string name="editidcard">点击编辑客户信息</string>
+    <string name="star">*</string>
+    <string name="proxyPhoneNoNull">代理人电话不能为空</string>
+	<string name="agent_info">代理人信息</string>
+	<string name="unknow_idcardinfo">姓名：未知　　姓名拼音：未知\n性别：未知　　民族：未知　　生日：未知　　国籍：未知\n身份证号：未知　　证件到期日：未知\n地址：未知</string>
+	<string name="no">否</string>
+	<string name="yes">是</string>
+	<string name="nohave">没有</string>
+	<string name="have">有</string>
+	<string name="identityCard">1</string>
+	<!-- 支取方式 -->
+	<string name="withdraw_type">*支取方式:</string>
+    <string name="password">密码</string>
+    <string name="certificate">证件</string>
+    <string name="nopassword">无印密</string>
+	<string name="inputName">请输入姓名</string>
+	<string name="inputIdNumber">请输入正确身份证号</string>
+	<string name="inputIdPolice">请输入发证机关</string>
+	<string name="bank_name">包头农商银行</string>
+	<string name="input_postal">请输入邮政编码</string>
+	<string name="input_accountname">请输入户名</string>
+	<string name="readIDCardOfSelf">请刷帐号户主的居民身份证</string>
+	<string name="readIDCardOfOpenAccount">请刷开户申请人的居民身份证</string>
+	<string name="readIDCardOfTransfer">请刷转帐转出方的居民身份证</string>
+	<string name="readIDCardOfPayee">请刷收款人的居民身份证</string>
+	<string name="readIDCardOfPayer">请刷付款人的居民身份证</string>
+</resources>

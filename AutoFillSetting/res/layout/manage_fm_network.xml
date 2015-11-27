@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <!-- 本地IP -->
+    <TextView android:id="@+id/LABEL_LOCALIP"
+        android:layout_width="200dp"
+        android:layout_height="58dp"
+        android:text="@string/local_ip"
+        android:textColor="@color/lightgray"
+        android:textSize="30sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="200dp"
+        android:gravity="right"/>
+    
+    <EditText android:id="@+id/EDIT_LOCALIP"
+        android:layout_toRightOf="@id/LABEL_LOCALIP"
+        android:layout_alignTop="@id/LABEL_LOCALIP"
+        android:layout_height="58dp"
+        android:layout_width="340dp"
+        android:textColor="@color/black_edittext"
+        android:textSize="30sp"
+        android:background="@drawable/input_bg"
+        android:inputType="numberDecimal"
+        android:digits="0123456789."
+        android:imeOptions="actionDone"               
+        />
+    <!-- 子网掩码 -->
+    <TextView android:id="@+id/LABEL_NETMASK"
+        android:layout_width="200dp"
+        android:layout_height="58dp"
+        android:text="@string/netmask"
+        android:textColor="@color/lightgray"
+        android:textSize="30sp"
+        android:layout_below="@id/LABEL_LOCALIP"
+        android:layout_alignLeft="@id/LABEL_LOCALIP"
+        android:layout_marginTop="14dp"
+        android:gravity="right"/>
+    
+    <EditText android:id="@+id/EDIT_NETMASK"
+        android:layout_toRightOf="@id/LABEL_NETMASK"
+        android:layout_alignTop="@id/LABEL_NETMASK"
+        android:layout_height="58dp"
+        android:layout_width="340dp"
+        android:textColor="@color/black_edittext"
+        android:textSize="30sp"
+        android:background="@drawable/input_bg"
+        android:inputType="numberDecimal"
+        android:digits="0123456789."
+        android:imeOptions="actionDone"   
+        />
+    <!-- 默认网关 -->
+    <TextView android:id="@+id/LABEL_GATEWAY"
+        android:layout_width="200dp"
+        android:layout_height="58dp"
+        android:text="@string/default_gateway"
+        android:textColor="@color/lightgray"
+        android:textSize="30sp"
+        android:layout_below="@id/LABEL_NETMASK"
+        android:layout_alignLeft="@id/LABEL_NETMASK"
+        android:layout_marginTop="14dp"
+        android:gravity="right"/>
+    
+    <EditText android:id="@+id/EDIT_GATEWAY"
+        android:layout_toRightOf="@id/LABEL_GATEWAY"
+        android:layout_alignTop="@id/LABEL_GATEWAY"
+        android:layout_height="58dp"
+        android:layout_width="340dp"
+        android:textColor="@color/black_edittext"
+        android:textSize="30sp"
+        android:background="@drawable/input_bg"
+        android:inputType="numberDecimal"
+        android:digits="0123456789."
+        android:imeOptions="actionDone"    
+        />
+    
+    <!-- 服务器IP -->
+    <TextView android:id="@+id/LABEL_SERVERIP"
+        android:layout_width="200dp"
+        android:layout_height="58dp"
+        android:text="@string/server_ip"
+        android:textColor="@color/lightgray"
+        android:textSize="30sp"
+        android:layout_below="@id/LABEL_GATEWAY"
+        android:layout_alignLeft="@id/LABEL_GATEWAY"
+        android:layout_marginTop="30dp"
+        android:gravity="right"/>
+    
+    <EditText android:id="@+id/EDIT_SERVERIP"
+        android:layout_toRightOf="@id/LABEL_SERVERIP"
+        android:layout_alignTop="@id/LABEL_SERVERIP"
+        android:layout_height="58dp"
+        android:layout_width="340dp"
+        android:textColor="@color/black_edittext"
+        android:textSize="30sp"
+        android:background="@drawable/input_bg"
+        android:inputType="numberDecimal"
+        android:digits="0123456789."
+        android:imeOptions="actionDone"  
+        />
+    
+    <!-- 服务器端口 -->
+    <TextView android:id="@+id/LABEL_SERVERPORT"
+        android:layout_width="200dp"
+        android:layout_height="58dp"
+        android:text="@string/server_port"
+        android:textColor="@color/lightgray"
+        android:textSize="30sp"
+        android:layout_below="@id/LABEL_SERVERIP"
+        android:layout_alignLeft="@id/LABEL_SERVERIP"
+        android:layout_marginTop="14dp"
+        android:gravity="right"/>
+    
+    <EditText android:id="@+id/EDIT_SERVERPORT"
+        android:layout_toRightOf="@id/LABEL_SERVERPORT"
+        android:layout_alignTop="@id/LABEL_SERVERPORT"
+        android:layout_height="58dp"
+        android:layout_width="340dp"
+        android:textColor="@color/black_edittext"
+        android:textSize="30sp" 
+        android:background="@drawable/input_bg"
+        android:maxLength="5"        
+        android:inputType="numberSigned"
+        android:imeOptions="actionDone"
+        />
+    <!-- 机构号 -->
+    <TextView android:id="@+id/LABEL_ORGNO"
+        android:layout_width="200dp"
+        android:layout_height="58dp"
+        android:text="@string/org_id"
+        android:textColor="@color/lightgray"
+        android:textSize="30sp"
+        android:layout_below="@id/LABEL_SERVERPORT"
+        android:layout_alignLeft="@id/LABEL_SERVERPORT"
+        android:layout_marginTop="14dp"
+        android:gravity="right"/>
+    
+    <EditText android:id="@+id/EDIT_ORGNO"
+        android:layout_toRightOf="@id/LABEL_ORGNO"
+        android:layout_alignTop="@id/LABEL_ORGNO"
+        android:layout_height="58dp"
+        android:layout_width="340dp"
+        android:textColor="@color/black_edittext"
+        android:textSize="30sp" 
+        android:background="@drawable/input_bg"
+        android:maxLength="32"        
+        android:inputType="text"
+        android:imeOptions="actionDone"
+        />
+    
+    <!-- 提示信息 -->
+    <TextView android:id="@+id/LABEL_TIP"
+        android:layout_width="640dp"
+        android:layout_height="38dp"
+        android:text="@string/server_port"
+        android:textColor="@color/green_tipok"
+        android:textSize="22sp"
+        android:layout_below="@id/EDIT_ORGNO"
+        android:layout_alignLeft="@id/EDIT_ORGNO"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
+        android:visibility="invisible"/>
+    
+    <Button android:id="@+id/BTN_CHECK"
+        android:layout_height="60dp"
+        android:layout_width="340dp"
+        android:layout_below="@id/LABEL_TIP"
+        android:layout_alignLeft="@id/LABEL_TIP"
+        android:layout_marginTop="10dp"
+        android:text="@string/check_network"
+        android:textSize="30sp"
+        android:background="@drawable/btn_gray_selector"
+        android:textColor="@color/lightwhite"
+        />
+    
+    <Button android:id="@+id/BTN_SAVE"
+        android:layout_height="60dp"
+        android:layout_width="340dp"
+        android:layout_below="@id/BTN_CHECK"
+        android:layout_alignLeft="@id/BTN_CHECK"
+        android:layout_marginTop="15dp"
+        android:text="@string/save"
+        android:textSize="30sp"
+        android:background="@drawable/btn_selector"
+        android:textColor="@color/lightwhite"
+        />
+
+</RelativeLayout>

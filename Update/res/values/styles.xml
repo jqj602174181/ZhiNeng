@@ -1,0 +1,97 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+ <style name="dialog_style" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 对话框是否有遮盖 -->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    
+     <style name="half_transparent" parent="android:Theme.Light">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/half_transparent</item>
+     
+    </style>
+    <style name="lineStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">@drawable/line</item>
+      
+    </style>
+    <style name="relLayoutStyle"
+        >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+       <style name="linLayoutStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_centerVertical">true</item>
+       	<item name="android:layout_marginLeft">10dp</item>   
+    </style>
+        <style name="imgStyle"
+        >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">20dp</item>
+          <item name="android:layout_marginRight">@dimen/margin1</item>
+        <item name="android:layout_marginTop">@dimen/margin1</item>
+          <item name="android:layout_marginBottom">@dimen/margin1</item>
+  		<item name="android:layout_alignParentTop">true</item>
+        
+    </style>
+    
+          <style name="imgStyle1"
+        >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">20dp</item>
+  
+  		<item name="android:layout_alignParentTop">true</item>
+        
+    </style>
+     <style name="textViewStyle1"
+        >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/vertionColor</item>
+        <item name="android:textSize">@dimen/updateTextSize</item>
+        <item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginBottom">10dp</item>
+        
+    </style>
+    
+      <style name="textViewStyle2"
+        >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/updateColor</item>
+        <item name="android:textSize">@dimen/updateTextSize</item>
+        <item name="android:layout_height">wrap_content</item>
+        
+    </style>
+    
+  
+</resources>

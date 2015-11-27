@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">定期存款开户</string>
+	<string name="accountInfo">帐户信息</string>
+    <string name="transfer_persion_Info">转帐转出方信息</string>
+    <string name="fixed_deposit">定期</string>
+    <string name="title_fixed_deposit">定期存款</string>
+    <string name="tongdui_type">通兑方式：</string>
+    <string name="tongdui_yes">通兑</string>
+    <string name="tongdui_no">不通兑</string>
+    <string name="withdrawal_type">*支取方式：</string>
+    <string name="password">密码</string>
+    <string name="certificate">证件</string>
+    <string name="stamp">无印密</string>
+    <string name="mobile_no">*交易人手机号：</string>
+    <string name="hint_input_mobile_no">请输入手机号码</string>
+    <string name="start_amount">*开户金额（元）：</string>
+    <string name="star">*</string>
+    <string name="tip_amount_null1">选择现金开户时，请填写金额！若是定期，金额不能低于50元。</string>
+    <string name="tip_amount_null">金额不能为空</string>
+    <string name="openAccountStyle">开户类别：</string>
+    <string name="dingQiChunZhe">定期存单/折</string>
+    <string name="kaiNeiDingQi">卡内定期</string>
+    <string name="mainCard">*主卡卡号：</string>
+    <string name="inputMainCard">请输入主卡卡号</string>
+    <string name="lingChunZhengQu">零存整取</string>
+    <string name="bankbook">存折</string>
+    <string name="magneticCard">磁条卡</string>
+    <string name="ICCard">借记IC卡</string>
+    <string name="mainCardNoNull">主卡卡号不能为空</string>
+    
+</resources>

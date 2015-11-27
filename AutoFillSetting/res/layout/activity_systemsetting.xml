@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout android:id="@+id/TITLE_BAR" 
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="#FF1E9586" >
+        
+        <ImageButton android:id="@+id/BTN_BACK"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@layout/retbtn_style"
+            android:src="@drawable/retbtn" />
+        
+        <TextView android:id="@+id/LABEL_TITLE"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/system_setting"
+            android:textSize="32sp"
+            android:textColor="@color/lightwhite"
+            />
+        <ImageView android:id="@+id/IMG_COUNTDOWN"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/LABEL_COUNTDOWN"
+            android:gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/clock"/>
+        	
+       	<TextView android:id="@+id/LABEL_COUNTDOWN"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:gravity="center_vertical"
+            android:layout_marginRight="20dp"
+            android:textSize="30sp"
+            android:text="30"
+            android:textColor="@color/lightwhite"/>
+       	
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+       	<FrameLayout
+        android:id="@+id/MENU"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginRight="0dp"
+        android:paddingRight="0dp" />
+       	
+       	<FrameLayout android:id="@+id/CONTENT_CONTAINTER"
+       	    android:layout_width="0dp"
+       	    android:layout_height="match_parent"
+       	    android:layout_weight="4"
+       	    android:background="@color/lightwhite"
+       	    android:layout_marginLeft="0dp" />
+        
+    </LinearLayout>    
+
+</LinearLayout>

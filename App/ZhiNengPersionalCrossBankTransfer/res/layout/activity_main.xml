@@ -1,0 +1,341 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 身份证信息 -->
+
+    <!-- <include
+        android:id="@+id/FRAGMENT_IDCARDINFO"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="15dp"
+        layout="@layout/fragment_idinfo_layout" /> -->
+
+    <LinearLayout
+        android:layout_width="1000dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/dottedline"
+        android:orientation="vertical" >
+
+        <!-- 出票人账户类型 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal" >
+
+            <com.centerm.autofill.appframework.view.CTTextView
+                style="@style/TextViewStyle"
+                android:layout_width="230dp"
+                android:text="*出票人账户类型：" />
+
+            <RadioGroup
+                android:id="@+id/RG_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/RB_10"
+                    style="@style/RBFixedHMRStyle1"
+                    android:checked="true"
+                    android:text="非支票" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- 业务类型 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal" >
+
+            <com.centerm.autofill.appframework.view.CTTextView
+                style="@style/TextViewStyle"
+                android:layout_width="230dp"
+                android:text="*业务类型：" />
+
+            <RadioGroup
+                android:id="@+id/RG_BusinessType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/RB_11"
+                    style="@style/RBFixedHMRStyle1"
+                    android:checked="true"
+                    android:text="电汇" />
+
+                <RadioButton
+                    android:id="@+id/RB_12"
+                    style="@style/RBFixedHMRStyle1"
+                    android:text="信汇" />
+
+                <RadioButton
+                    android:id="@+id/RB_13"
+                    style="@style/RBFixedHMRStyle1"
+                    android:text="汇票" />
+
+                <RadioButton
+                    android:id="@+id/RB_14"
+                    style="@style/RBFixedHMRStyle1"
+                    android:text="本票" />
+
+                <RadioButton
+                    android:id="@+id/RB_15"
+                    style="@style/RBFixedHMRStyle1"
+                    android:text="其他" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- 汇款方式 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal" >
+
+            <com.centerm.autofill.appframework.view.CTTextView
+                style="@style/TextViewStyle"
+                android:layout_width="230dp"
+                android:text="*汇款方式：" />
+
+            <RadioGroup
+                android:id="@+id/RG_Common"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/RB_16"
+                    style="@style/RBFixedHMRStyle1"
+                    android:checked="true"
+                    android:text="普通" />
+
+                <RadioButton
+                    android:id="@+id/RB_17"
+                    style="@style/RBFixedHMRStyle1"
+                    android:text="加急" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- 申请人全称 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal" >
+
+            <com.centerm.autofill.appframework.view.CTTextView
+                style="@style/TextViewStyle"
+                android:layout_width="230dp"
+                android:text="*申请人全称：" />
+
+            <EditText
+                android:id="@+id/EDIT_RemintFullNamne"
+                style="@style/NameEditTextStyle"
+                android:layout_width="380dp"
+                android:layout_marginLeft="20dp" />
+        </LinearLayout>
+
+        <!-- 申请人帐号 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal" >
+
+            <com.centerm.autofill.appframework.view.CTTextView
+                style="@style/TextViewStyle"
+                android:layout_width="230dp"
+                android:text="*申请人帐号：" />
+
+            <EditText
+                android:id="@+id/EDIT_RemintAccounts"
+                style="@style/AccountEditTextStyle"
+                android:layout_width="380dp"
+                android:layout_marginLeft="20dp" />
+
+            <Button
+                android:id="@+id/BTN_RemintReadCard"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/nmnx_small_btn_selector"
+                android:text="读卡"
+                android:textColor="@android:color/white"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <!-- 申请人帐号开户行 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal" >
+
+            <com.centerm.autofill.appframework.view.CTTextView
+                style="@style/TextViewStyle"
+                android:layout_width="230dp"
+                android:text="*申请人帐号开户行：" />
+
+            <EditText
+                android:id="@+id/EDIT_RemintHuiChuBank"
+                style="@style/BankEditTextStyle"
+                android:layout_width="380dp"
+                android:layout_marginLeft="20dp" />
+        </LinearLayout>
+
+        <!-- 收款人全称 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal" >
+
+            <com.centerm.autofill.appframework.view.CTTextView
+                style="@style/TextViewStyle"
+                android:layout_width="230dp"
+                android:text="*收款人全称：" />
+
+            <EditText
+                android:id="@+id/EDIT_DxPayeeFullNamne"
+                style="@style/NameEditTextStyle"
+                android:layout_width="380dp"
+                android:layout_marginLeft="20dp" />
+        </LinearLayout>
+
+        <!-- 收款人帐号 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal" >
+
+            <com.centerm.autofill.appframework.view.CTTextView
+                style="@style/TextViewStyle"
+                android:layout_width="230dp"
+                android:text="*收款人帐号：" />
+
+            <EditText
+                android:id="@+id/EDIT_DxPayeeAccounts"
+                style="@style/AccountEditTextStyle"
+                android:layout_width="380dp"
+                android:layout_marginLeft="20dp" />
+        </LinearLayout>
+
+        <!-- 收款人账户开户行 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal" >
+
+            <com.centerm.autofill.appframework.view.CTTextView
+                style="@style/TextViewStyle"
+                android:layout_width="230dp"
+                android:text="*收款人账户开户行：" />
+
+            <EditText
+                android:id="@+id/EDIT_DxPayeeHuiLuBank"
+                style="@style/BankEditTextStyle"
+                android:layout_width="380dp"
+                android:layout_marginLeft="20dp" />
+        </LinearLayout>
+
+        <!-- 金额（元） -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal" >
+
+            <com.centerm.autofill.appframework.view.CTTextView
+                style="@style/TextViewStyle"
+                android:layout_width="230dp"
+                android:text="*金额（元）：" />
+
+            <EditText
+                android:id="@+id/EDIT_DxMoneyYuan"
+                style="@style/MoneyEditTextStyle"
+                android:layout_width="200dp"
+                android:layout_marginLeft="20dp" />
+
+            <EditText
+                android:id="@+id/EDIT_DxMoneyBig"
+                style="@style/EditTextStyle1"
+                android:layout_width="250dp"
+                android:layout_marginLeft="20dp"
+                android:enabled="false" />
+        </LinearLayout>
+
+        <!-- 附加信息 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/TextViewStyle"
+                android:layout_width="230dp"
+                android:text="附加信息与用途：" />
+
+            <EditText
+                android:id="@+id/EDIT_Information"
+                style="@style/TextEditTextStyle"
+                android:layout_width="550dp"
+                android:layout_marginLeft="20dp" />
+        </LinearLayout>
+
+        <!-- 办理人 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/block_ransaction_layout" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

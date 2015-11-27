@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@drawable/topbar_bak" >
+
+    <ImageButton
+        android:id="@+id/BTN_RetBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/retbtn_style"
+        android:onClick="onRetClick"
+        android:src="@drawable/retbtn" />
+
+    <TextView
+        android:id="@+id/LABEL_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:text="存款凭条"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/IMG_COUNTDOWN"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/LABEL_COUNTDOWN"
+        android:gravity="center_vertical"
+        android:src="@drawable/clock" />
+
+    <TextView
+        android:id="@+id/LABEL_COUNTDOWN"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:gravity="center_vertical"
+        android:text="180"
+        android:textColor="@color/framework_lightwhite"
+        android:textSize="30sp" />
+
+</RelativeLayout>

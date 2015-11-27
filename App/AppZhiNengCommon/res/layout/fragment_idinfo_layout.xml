@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dottedline" >
+
+    <TextView
+        android:id="@+id/LABEL_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="15dp"
+        android:text="代理人信息："
+        android:textColor="#333333"
+        android:textSize="25sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical" >
+
+        <!-- 显示身份证信息的碎片 -->
+
+        <TextView
+            android:id="@+id/tv_person_info"
+            android:layout_width="850dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp"
+            android:lineSpacingExtra="5dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="30dp"
+            android:text="@string/unknow_idcardinfo"
+            android:textColor="@color/framework_font_tip"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/iv_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@id/tv_person_info"
+            android:contentDescription="@string/app_name" />
+
+        <Button
+            android:id="@+id/BTN_EDITIDCARD"
+            android:layout_width="150dp"
+            android:layout_height="130dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="170dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/btn_white_selector"
+            android:text="@string/editidcard"
+            android:textColor="@color/framework_font_tip"
+            android:textSize="28sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/BTN_READIDCARD"
+            android:layout_width="150dp"
+            android:layout_height="130dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/btn_white_selector"
+            android:text="@string/readidcard"
+            android:textColor="@color/framework_font_tip"
+            android:textSize="28sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/BTN_ReadIDAgent"
+        android:layout_width="500dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/btn_selector"
+        android:text="点击读取代理人二代证信息"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

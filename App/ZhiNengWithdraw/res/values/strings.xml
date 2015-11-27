@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">储蓄取款</string>
+	<string name="personalStore">储蓄存款</string>
+	<string name="saveStyle">*储种:</string>
+	<string name="currentDeposit">活期储存</string>
+    <string name="lumpSumTimeDeposit">整存整取</string>
+    <string name="installmentSavings">零存整取</string>
+    <string name="educationSaving">教育储蓄</string>
+    <string name="annuitySavings">整存零取</string>
+    <string name="interestDrawing">存本取息</string>
+    <string name="variableTermDeposit">定活两便</string>
+    <string name="callDeposit">通知存款</string>
+    <string name="OneNote">一本通</string>
+    <string name="saveMoney">*存款金额:</string>
+    <string name="period">存期(定期填写):</string>
+    <string name="saveAppoint">*转存约定:</string>
+    <string name="TransferOfPrincipalAndInterest">本息转存</string>
+    <string name="principalArchived">本金转存</string>
+    <string name="NonAutomaticRedeposit">不自动转存</string>
+    <string name="paymentMethod">*支取方式:</string>
+    <string name="password">密码</string>
+    <string name="Seal">印鉴</string>
+    <string name="credentials">证件</string>
+    <string name="indenture">凭折/单</string>
+    <string name="saveMoneyNoNull">存款金额不能为空</string>
+  	<string name="periodNoNull">存期不能为空</string>
+  	<string name="has_card">*携带卡/折:</string>
+  	<string name="input_name">请填写户名</string>
+    
+</resources>

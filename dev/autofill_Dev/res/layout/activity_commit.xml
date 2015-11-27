@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent1" >
+
+    <FrameLayout
+        android:id="@+id/BLOCK_STEP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+    <!-- 正在向服务器提交交易 -->
+
+    <RelativeLayout
+        android:id="@+id/BLOCK_COMMITTING"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/block_bg_white"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/IMG_LOADING"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/loading" />
+
+        <TextView
+            android:id="@+id/LABEL_TIP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="40dp"
+            android:layout_toRightOf="@id/IMG_LOADING"
+            android:text="@string/commit_data"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+    </RelativeLayout>
+
+    <!-- 外置打印机打印 -->
+
+    <RelativeLayout
+        android:id="@+id/BLOCK_RECEIPT_PRINT"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal" >
+
+            <!-- 打印正面 -->
+
+            <RelativeLayout
+                android:id="@+id/BLOCK_PRINTFONT"
+                android:layout_width="400dp"
+                android:layout_height="560dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/block_bg_print" >
+
+                <ImageView
+                    android:id="@+id/IMG_PRINTFRONT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:src="@drawable/print_front" />
+
+                <ImageView
+                    android:id="@+id/IMG_PRINT_ENDOK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="230dp"
+                    android:src="@drawable/print_ok" />
+
+                <TextView
+                    android:id="@+id/LABEL_PAPERTIP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/IMG_PRINTFRONT"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:text="将凭单正面放入打印机"
+                    android:textColor="@color/grayBB"
+                    android:textSize="26sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/LABEL_PAPERTIP"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="30dp"
+                    android:text="打印正面凭单"
+                    android:textColor="@color/gray33"
+                    android:textSize="30sp" />
+            </RelativeLayout>
+
+            <!-- 打印反面 -->
+
+            <RelativeLayout
+                android:id="@+id/BLOCK_PRINTTAIL"
+                android:layout_width="400dp"
+                android:layout_height="560dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/block_bg_print"
+                android:visibility="visible" >
+
+                <ImageView
+                    android:id="@+id/IMG_PRINTTAIL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:src="@drawable/print_tails" />
+
+                <ImageView
+                    android:id="@+id/IMG_PRINTTAIL_ENDOK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="230dp"
+                    android:src="@drawable/print_ok" />
+
+                <TextView
+                    android:id="@+id/LABEL_PRINTTAILTIP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/IMG_PRINTTAIL"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:text="将凭单反面放入打印机"
+                    android:textColor="@color/grayBB"
+                    android:textSize="26sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/LABEL_PRINTTAILTIP"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="30dp"
+                    android:text="打印反面凭单"
+                    android:textColor="@color/gray33"
+                    android:textSize="30sp" />
+            </RelativeLayout>
+
+            <!-- 确定 -->
+
+            <RelativeLayout
+                android:id="@+id/BLOCK_PRINTOK"
+                android:layout_width="400dp"
+                android:layout_height="560dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/block_bg_print"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/IMG_PRINTOK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="80dp"
+                    android:src="@drawable/btn_ok" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/IMG_PRINTOK"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="90dp"
+                    android:text="@string/enter"
+                    android:textColor="@color/gray33"
+                    android:textSize="30sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- 正在打印凭条 -->
+
+    <RelativeLayout
+        android:id="@+id/BLOCK_PRINTING"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" 
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/IMG_PRINGING"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/btn_ok" />
+
+        <TextView
+            android:id="@+id/LABEL_PRINTING"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/IMG_PRINGING"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="@string/print_number"
+            android:textColor="@color/gray"
+            android:textSize="28sp" />
+    </RelativeLayout>
+
+    <!-- 打印凭条完成请撕纸 -->
+
+    <RelativeLayout
+        android:id="@+id/BLOCK_PRINTEND"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/block_bg_white"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/IMG_OK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/btn_ok" />
+
+        <TextView
+            android:id="@+id/LABEL_PRINTEND"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/IMG_OK"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="@string/print_end"
+            android:textColor="@color/lightgray"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/LABEL_EXITTIMEOUT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LABEL_PRINTEND"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/print_end"
+            android:textColor="@color/lightgray"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/BTN_EXIT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LABEL_EXITTIMEOUT"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="50dp"
+            android:background="#00000000"
+            android:text="@string/enter"
+            android:textColor="@color/black_edittext"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

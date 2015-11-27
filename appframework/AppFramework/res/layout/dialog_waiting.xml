@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/iqclass_dialog_progressLinear"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center" >
+       <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/waiting_dialog_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ProgressBar
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:indeterminateDrawable="@drawable/progressbar_style_background" 
+           />
+
+       <TextView
+            android:id="@+id/dialog_waiting_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="loading...."
+            android:textColor="#ffffffff"
+            android:gravity="center_vertical"
+            android:textSize="20sp" />
+    </LinearLayout>
+  
+
+</FrameLayout>

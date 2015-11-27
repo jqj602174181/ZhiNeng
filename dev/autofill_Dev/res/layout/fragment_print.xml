@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/BLOCK_INPRINT"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <!-- 正在打印凭条 -->
+    <RelativeLayout android:id="@+id/BLOCK_PRINTING"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" >
+        <ImageView android:id="@+id/IMG_PRINGING"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@anim/printerlist"/>
+        <TextView android:id="@+id/LABEL_PRINTING"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/IMG_PRINGING"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="@string/print_number"
+            android:textSize="28sp"
+            android:textColor="@color/gray"/>
+    </RelativeLayout>
+
+    <!-- 打印凭条完成请撕纸 -->
+    <RelativeLayout android:id="@+id/BLOCK_PRINTEND"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/block_bg_white"
+        android:visibility="gone" >
+        <ImageView android:id="@+id/IMG_OK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/btn_ok"/>
+        <TextView android:id="@+id/LABEL_PRINTEND"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/IMG_OK"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="@string/print_end"
+            android:textSize="24sp"
+            android:textColor="@color/lightgray"/>
+        <TextView android:id="@+id/LABEL_EXITTIMEOUT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LABEL_PRINTEND"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/ten_second_exit"
+            android:textSize="24sp"
+            android:textColor="@color/lightgray"
+            />
+        <Button android:id="@+id/BTN_EXIT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LABEL_EXITTIMEOUT"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="40dp"
+            android:text="@string/enter"
+            android:textSize="30sp"
+            android:textColor="@color/black_edittext"
+            android:background="#00000000"/>
+    </RelativeLayout>
+    
+    <!-- 无纸时进行提示 -->
+    <RelativeLayout     
+	    android:id="@+id/BLOCK_NOPAPER"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerInParent="true"
+	    android:visibility="gone">
+	    <!-- 中间的超时提示 -->
+	    <RelativeLayout android:id="@+id/BLOCK_TIMEOUT"
+	        android:layout_width="350dp"
+	        android:layout_height="350dp"
+	        android:background="@drawable/block_bg_white">
+	        <ImageView
+		        android:id="@+id/IMG_ERRORMARK"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="40dp"
+		        android:layout_centerHorizontal="true"
+		        android:scaleType="fitCenter"
+		        android:src="@drawable/errormark"/>
+	        
+	        <TextView android:id="@+id/LABEL_ERRTIP"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/IMG_ERRORMARK"
+		        android:layout_centerHorizontal="true"
+		        android:layout_marginTop="20dp"
+		        android:textSize="24sp"
+		        android:textColor="@color/pure_black"
+		        android:text="因缺纸无法完成打印"
+		        />
+	    </RelativeLayout>
+	    
+	    <!-- 超时 -->
+	    <TextView android:id="@+id/LABEL_TIMEMOUT"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/BLOCK_TIMEOUT"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="20dp"
+	        android:textSize="24sp"
+	        android:textColor="@color/lightwhite"
+	        android:text="超时"
+	        />
+	    <!-- 正式开始打印的按钮 -->
+	    <Button android:id="@+id/BTN_PRINT"
+	        android:layout_width="260dp"
+	        android:layout_height="72dp"
+	        android:layout_below="@id/LABEL_TIMEMOUT"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="40dp"
+	        android:textSize="28sp"
+	        android:text="@string/touch_print"
+	        android:background="@drawable/btn1_selector"
+	        android:textColor="@color/lightwhite"
+	        android:visibility="gone"/>
+	</RelativeLayout>
+</RelativeLayout>  

@@ -1,0 +1,40 @@
+<!-- 选择读磁卡还是刷磁条卡 -->
+<RelativeLayout 
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:background="@color/transparent1"    
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+    >
+	<LinearLayout android:id="@+id/BLOCK_SELECT"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_centerInParent="true"
+	    >
+	   <TextView
+	        android:id="@+id/LABEL_ReadCard"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/select_card_bk_click"
+	        android:drawablePadding="50dp"
+	        android:text="@string/readCard"
+	        android:gravity="center_horizontal"
+	        android:paddingBottom="20dp"
+	        android:layout_marginRight="100dp"
+	        android:textSize="40sp"
+	        android:drawableTop="@drawable/card_img" />
+	    <TextView
+	        android:id="@+id/LABEL_ReadICCard"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	  		android:background="@drawable/select_card_bk_click"
+	        android:drawablePadding="50dp"
+	        android:text="@string/readICCard"
+	        android:gravity="center_horizontal"
+	        android:paddingBottom="20dp"
+	        android:textSize="40sp"
+	        android:drawableTop="@drawable/iccard_img" />
+	</LinearLayout>
+</RelativeLayout>
+    
+    

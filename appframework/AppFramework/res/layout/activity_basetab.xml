@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/busibg" >
+
+    <include
+        android:id="@+id/HEADER"
+        layout="@layout/block_pageheader" />
+
+    <!-- tab标签 -->
+    <LinearLayout
+        android:id="@+id/TABHEAD"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/HEADER"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="30dp"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tab1"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab1"
+            android:gravity="center"
+            android:padding="@dimen/tabPadding"
+            android:textColor="@color/framework_tab_bg"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tab2"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/tab33"
+            android:gravity="center"
+             android:padding="@dimen/tabPadding"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+        <TextView
+            android:id="@+id/tab3"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/tab33"
+            android:gravity="center"
+             android:padding="@dimen/tabPadding"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+        <TextView
+            android:id="@+id/tab4"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/tab33"
+            android:gravity="center"
+              android:padding="@dimen/tabPadding"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+      <TextView
+            android:id="@+id/tab5"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/tab33"
+            android:gravity="center"
+               android:padding="@dimen/tabPadding"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />  
+            <TextView
+            android:id="@+id/tab6"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/tab33"
+            android:gravity="center"
+              android:padding="@dimen/tabPadding"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />  
+             <TextView
+            android:id="@+id/tab7"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/tab33"
+            android:gravity="center"
+            android:padding="@dimen/tabPadding"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />  
+              <TextView
+            android:id="@+id/tab8"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/tab33"
+            android:gravity="center"
+             android:padding="@dimen/tabPadding"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />  
+              <TextView
+            android:id="@+id/tab9"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/tab33"
+            android:gravity="center"
+             android:padding="@dimen/tabPadding"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />  
+            
+           <TextView
+            android:id="@+id/tab10"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/tab2"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <!-- 可变的内容区 -->
+    <FrameLayout
+        android:id="@+id/TABCONTENT"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/TABHEAD"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/apply_account_info_shape" />
+</RelativeLayout>

@@ -1,0 +1,191 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#55000000"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="650dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/marginTop"
+       
+        android:background="@drawable/update_pop_bak_new"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/marginTop" >
+
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_horizontal"
+            >
+              <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/checkUpdata"
+            android:textColor="@color/black"
+            android:textSize="32sp" />
+              
+              <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/warning"
+            android:textColor="@color/updateColor"
+            android:textSize="@dimen/updateTextSize" />
+        </LinearLayout>
+      
+
+        <RelativeLayout
+            android:id="@+id/REL_UpdateSystemRom"
+            style="@style/relLayoutStyle" >
+
+            <ImageView
+                android:id="@+id/IMG_Rom"
+                style="@style/imgStyle"
+                android:src="@drawable/sys_rom_ico" />
+              <ImageView
+                android:id="@+id/IMG_RomRoate"
+                style="@style/imgStyle1"
+			    android:layout_marginTop="@dimen/margin1"   
+			    android:visibility="gone"	
+				android:src="@drawable/ico_circle"
+           />
+
+            <LinearLayout
+                style="@style/linLayoutStyle"
+                android:layout_toRightOf="@id/IMG_Rom" >
+
+                <TextView
+                    android:id="@+id/LABEL_UpdateRom"
+                    style="@style/textViewStyle1"
+                    android:text="@string/systemRom" />
+
+                <TextView
+                    android:id="@+id/LABEL_UpdateSystemResult"
+                    style="@style/textViewStyle2"
+                    android:text="@string/chekcUpdating" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/REL_UpdatePrinter"
+			android:visibility="gone"
+            style="@style/relLayoutStyle" >
+
+            <View
+                style="@style/lineStyle"
+                android:layout_alignParentTop="true" />
+
+            <ImageView
+                android:id="@+id/IMG_Printer"
+                style="@style/imgStyle"
+                android:src="@drawable/print_rom_ico" />
+   <ImageView
+                android:id="@+id/IMG_PrinterRoate"
+                style="@style/imgStyle"
+                   android:visibility="gone"
+                   android:src="@drawable/ico_circle"
+               />
+            <LinearLayout
+                style="@style/linLayoutStyle"
+                android:layout_toRightOf="@id/IMG_Printer" >
+
+                <TextView
+                    android:id="@+id/LABEL_UpdatePrinter"
+                    style="@style/textViewStyle1"
+                    android:text="@string/printerRom" />
+
+                <TextView
+                    android:id="@+id/LABEL_UpdatePrinterResult"
+                    style="@style/textViewStyle2"
+                    android:text="@string/chekcUpdating" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/REL_UpdateFinance"
+            	android:visibility="gone"
+             style="@style/relLayoutStyle" >
+
+            <View
+                style="@style/lineStyle"
+                android:layout_alignParentTop="true" />
+
+            <ImageView
+                android:id="@+id/IMG_Finance"
+                style="@style/imgStyle"
+
+                android:src="@drawable/finance_rom_ico" />
+              <ImageView
+                android:id="@+id/IMG_FinanceRoate"
+                   android:visibility="gone"
+           android:src="@drawable/ico_circle"
+                style="@style/imgStyle"/>
+                
+        <LinearLayout
+                style="@style/linLayoutStyle"
+                android:layout_toRightOf="@id/IMG_Finance" >
+
+                <TextView
+                    android:id="@+id/LABEL_UpdateFinance"
+                    style="@style/textViewStyle1"
+                    android:text="@string/financeRom" />
+
+                <TextView
+                    android:id="@+id/LABEL_UpdateFinanceResult"
+                    style="@style/textViewStyle2"
+                    android:text="@string/chekcUpdating" />
+            </LinearLayout>
+           
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/REL_UpdateApp"
+            	android:visibility="gone"
+            style="@style/relLayoutStyle" >
+
+            <View
+                style="@style/lineStyle"
+                android:layout_alignParentTop="true" />
+
+            <ImageView
+                android:id="@+id/IMG_App"
+                style="@style/imgStyle"
+                android:src="@drawable/app_rom_ico" />
+   <ImageView
+                android:id="@+id/IMG_AppRoate"
+                android:visibility="gone"
+                android:src="@drawable/ico_circle"
+                style="@style/imgStyle"/>
+            <LinearLayout
+                style="@style/linLayoutStyle"
+                android:layout_toRightOf="@id/IMG_App" >
+
+                <TextView
+                    android:id="@+id/LABEL_UpdateApp"
+                    style="@style/textViewStyle1"
+                    android:text="@string/appModel" />
+
+                <TextView
+                    android:id="@+id/LABEL_UpdateAppResult"
+                    style="@style/textViewStyle2"
+                    android:text="@string/chekcUpdating" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <Button
+           android:visibility="gone"
+            android:id="@+id/BTN_Update"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:textSize="25sp"
+            android:enabled="false"
+            android:layout_marginTop="@dimen/marginTop"
+            android:background="@drawable/btn_update" />
+    </LinearLayout>
+
+</LinearLayout>

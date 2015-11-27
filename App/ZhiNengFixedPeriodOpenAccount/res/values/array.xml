@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="depositterm" >
+	    <item>三个月</item>
+	    <item>六个月</item>
+	    <item>一年</item>
+	    <item>二年</item>
+	    <item>三年</item>
+	    <item>五年</item>
+	</string-array> 
+</resources>

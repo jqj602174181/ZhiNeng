@@ -1,0 +1,75 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <!-- TextView相关属性,长度与150 -->
+    <style name="TextViewStyle" parent="TextViewStyleBase">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+    <!-- TextView相关属性,长度自适应 -->
+
+
+    <style name="LabelFixedHWStyle1" parent="LabelStyle">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:layout_marginRight">20dp</item>
+    </style>
+  
+    
+    <style name="LabelFixedHStyle1" parent="LabelStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    
+    <style name="LabelFixedHMRStyle1" parent="LabelStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="EditFixedHWStyle1" parent="EditStyle">
+        <item name="android:layout_width">350dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+    </style>
+
+    <style name="EditTelStyle1" parent="EditStyle">
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:inputType">phone</item>
+    </style>
+
+        <style name="EditFixedHWStyle2" parent="EditStyle">
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:inputType">text</item>
+    </style>
+    
+    <style name="RBFixedHMRStyle1" parent="RBStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginRight">50dp</item>
+        
+    </style>
+
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent1">#DF000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="gray">#E8E8E8</color>
+    <color name="gray33">#333333</color>
+    <color name="grayBB">#BBBBBB</color>
+    <color name="yellow">#F88B00</color>
+    <color name="black">#222222</color>
+    <color name="white">#BFBFBF</color>
+    <color name="tab_bg">#33A094</color>
+    <color name="orange">#FF6600</color>
+    <color name="btn_color">#C8C8C8</color>
+    <color name="dialog_bk">#FF1E9586</color>
+    <color name="font_tip">#909090</color>
+    <color name="red">#FF0000 </color>
+	<color name="province_line_border">#C7C7C7</color>
+	<color name="lightwhite">#FFFFFF</color>
+	<color name="lightgray">#888888</color>
+	<color name="pure_black">#000000</color>
+	<color name="black_edittext">#423414</color>
+	<color name="green_tipok">#08bfa9</color>
+	<color name="red_tiperr">#cc3333</color>
+	<color name="text_green">#33A064</color>
+	<color name="half_touming">#00000000</color>
+	<color name="hal_transparent">#aa000000</color>
+</resources>

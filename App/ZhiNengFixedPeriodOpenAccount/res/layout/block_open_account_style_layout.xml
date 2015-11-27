@@ -1,0 +1,69 @@
+ <!-- 开户类别 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/LABEL_OpenAccountStyle"
+        style="@style/LabelFixedHStyle1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:text="@string/openAccountStyle" />
+
+    <RadioGroup
+        android:id="@+id/RG_OpenAccountStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/LABEL_OpenAccountStyle"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/RB_OpenAccount_DingQiChunZhe"
+            style="@style/RBFixedHMRStyle1"
+            android:layout_width="170dp"
+            android:checked="true"
+            android:text="@string/dingQiChunZhe" />
+
+        <RadioButton
+            android:id="@+id/RB_OpenAccount_KaiNeiDingQi"
+            style="@style/RBFixedHMRStyle1"
+            android:layout_width="180dp"
+            android:text="@string/kaiNeiDingQi" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/LINEAR_MainCard"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/LABEL_OpenAccountStyle"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <com.centerm.autofill.appframework.view.CTTextView
+            style="@style/LabelFixedHStyle1"
+            android:layout_width="wrap_content"
+            android:text="@string/mainCard" />
+
+        <EditText
+            android:id="@+id/EDIT_MainCard"
+            style="@style/AccountEditTextStyle"
+            android:layout_width="400dp"
+            android:layout_marginLeft="20dp"
+            android:hint="@string/inputMainCard" />
+
+        <Button
+            android:id="@+id/BTN_MainCard"
+            style="@style/BtnStyle"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:text="@string/readCard" />
+    </LinearLayout>
+
+</RelativeLayout>

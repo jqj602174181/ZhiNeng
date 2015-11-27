@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentBottom="true"
+    android:layout_marginEnd="40dp"
+    android:layout_marginBottom="20dp" >
+     <!-- 上一步 -->
+     <Button
+            android:id="@+id/BTN_PRE"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:background="@drawable/btn_selector"
+            android:text="@string/step_forward"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+     
+     <!-- 下一步 -->
+     <Button
+            android:id="@+id/BTN_NEXT"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:background="@drawable/btn_selector"
+            android:text="@string/next"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:layout_marginLeft="20dp" />
+     <!-- 下一步 -->
+     <Button
+            android:id="@+id/BTN_COMPLETE"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:background="@drawable/btn_selector"
+            android:text="@string/complete"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:layout_marginLeft="20dp" />
+
+</LinearLayout>

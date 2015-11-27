@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="@string/clientName"
+            android:textColor="@color/lightgray"
+            android:textSize="@dimen/base_setting_textsize" />
+
+        <EditText
+            android:id="@+id/BaseSetting_EditText"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+   
+            android:textColor="#ff000000"
+            android:textSize="@dimen/base_setting_textsize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/BaseSeting_isPublic"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:textSize="@dimen/base_setting_textsize"
+            android:text="@string/isPublic"
+            android:textColor="@color/lightgray" />
+
+        <RadioButton
+            android:id="@+id/BaseSeting_isPersion"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+           android:textSize="@dimen/base_setting_textsize"
+            android:text="@string/isPersonal"
+            android:textColor="@color/lightgray" />
+
+        <RadioButton
+            android:id="@+id/BaseSeting_isFinancial"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:textSize="@dimen/base_setting_textsize"
+            android:layout_margin="10dp"
+            android:text="@string/isFinancial"
+            android:textColor="@color/lightgray" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/BaseSetting_okBtn"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_selector"
+        android:text="@string/save"
+        android:textColor="@color/lightwhite"
+        android:textSize="30sp" />
+
+</LinearLayout>

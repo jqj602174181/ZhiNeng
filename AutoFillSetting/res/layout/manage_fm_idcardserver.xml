@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <!-- 联网核查IP -->
+    <TextView android:id="@+id/LABEL_IP"
+        android:layout_width="200dp"
+        android:layout_height="58dp"
+        android:text="@string/hecha_ip"
+        android:textColor="@color/lightgray"
+        android:textSize="30sp"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="200dp"
+        android:gravity="right"/>    
+    <EditText android:id="@+id/EDIT_IP"
+        android:layout_toRightOf="@id/LABEL_IP"
+        android:layout_alignTop="@id/LABEL_IP"
+        android:layout_height="58dp"
+        android:layout_width="340dp"
+        android:textColor="@color/black_edittext"
+        android:textSize="30sp"
+        android:background="@drawable/input_bg"
+        android:inputType="numberDecimal"
+        android:digits="0123456789."
+        android:imeOptions="actionDone"
+        />
+    
+    <!-- 联网核查端口 -->
+    <TextView android:id="@+id/LABEL_PORT"
+        android:layout_width="200dp"
+        android:layout_height="58dp"
+        android:text="@string/hecha_port"
+        android:textColor="@color/lightgray"
+        android:textSize="30sp"
+        android:layout_below="@id/LABEL_IP"
+        android:layout_alignLeft="@id/LABEL_IP"        
+        android:layout_marginTop="20dp"
+        android:gravity="right"/>    
+    <EditText android:id="@+id/EDIT_PORT"
+        android:layout_toRightOf="@id/LABEL_PORT"
+        android:layout_alignTop="@id/LABEL_PORT"
+        android:layout_height="58dp"
+        android:layout_width="340dp"
+        android:textColor="@color/black_edittext"
+        android:textSize="30sp"        
+        android:inputType="numberSigned"
+        android:background="@drawable/input_bg"
+        android:maxLength="5"
+        android:imeOptions="actionDone"
+        />
+    
+    <!-- 机构号 -->
+    <TextView android:id="@+id/LABEL_ORG"
+        android:layout_width="200dp"
+        android:layout_height="58dp"
+        android:text="@string/org_id"
+        android:textColor="@color/lightgray"
+        android:textSize="30sp"
+        android:layout_below="@id/LABEL_PORT"
+        android:layout_marginTop="20dp"
+        android:layout_alignLeft="@id/LABEL_PORT"
+        android:gravity="right"/>    
+    <EditText android:id="@+id/EDIT_ORG"
+        android:layout_toRightOf="@id/LABEL_ORG"
+        android:layout_alignTop="@id/LABEL_ORG"
+        android:layout_height="58dp"
+        android:layout_width="340dp"
+        android:textColor="@color/black_edittext"
+        android:textSize="30sp"
+        android:background="@drawable/input_bg"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        />
+   <!-- 提示信息 -->
+    <TextView android:id="@+id/LABEL_TIP"
+        android:layout_width="640dp"
+        android:layout_height="48dp"
+        android:text=""
+        android:textColor="@color/red_tiperr"
+        android:textSize="22sp"
+        android:visibility="invisible"
+        android:layout_below="@id/EDIT_ORG"
+        android:layout_alignLeft="@id/EDIT_ORG"
+        android:layout_marginTop="10dp"
+        android:gravity="left"/>
+    
+    <Button android:id="@+id/BTN_SAVE"
+        android:layout_height="60dp"
+        android:layout_width="340dp"
+        android:layout_below="@id/LABEL_TIP"
+        android:layout_alignLeft="@id/LABEL_TIP"
+        android:layout_marginTop="30dp"
+        android:text="@string/save"
+        android:textSize="30sp"
+        android:background="@drawable/btn_selector"
+        android:textColor="@color/lightwhite"
+        />
+    
+
+</RelativeLayout>

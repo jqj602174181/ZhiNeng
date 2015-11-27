@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lightwhite" >
+    <RelativeLayout android:id="@+id/TITLE_BAR" 
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="#FF1E9586" >
+        
+        <TextView android:id="@+id/LABEL_TITLE"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/system_update"
+            android:textSize="32sp"
+            android:textColor="@color/lightwhite"
+            />
+       	
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="match_parent">
+	    <!-- 检测更新提示信息 -->
+	    <ImageView android:id="@+id/IMG_LOADING"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="150dp"
+	        android:layout_marginLeft="350dp"
+	        android:src="@drawable/loading_white"
+	        android:contentDescription=""/>
+	    <TextView android:id="@+id/TIP_CHECKVERSION"
+	        android:layout_width="640dp"
+	        android:layout_height="58dp"
+	        android:text="@string/check_newversion"
+	        android:textSize="30sp"
+	        android:textColor="#bdbdbd"
+	        android:layout_toRightOf="@id/IMG_LOADING"
+	        android:layout_alignBottom="@id/IMG_LOADING"
+	        android:layout_marginLeft="20dp"/>
+	    
+	    <!-- 检测结果 -->
+	    <TextView android:id="@+id/TIP_RESULT"
+	        android:layout_width="480dp"
+	        android:layout_height="wrap_content"
+	        android:text="@string/tip_newest_version"
+	        android:textSize="30sp"
+	        android:textColor="#bdbdbd"
+	        android:layout_marginTop="150dp"
+	        android:layout_marginLeft="350dp"
+	        android:maxHeight="400dp"
+	        android:visibility="invisible"/>
+	</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">个人跨行转帐</string>
+    <string name="transferChecksStyle">支票类型:</string>
+    <string name="transferChecks">支票</string>
+    <string name="nochecks">结算业务申请</string>
+    <string name="businessType">业务类型:</string>
+    <string name="T_T">电汇</string>
+    <string name="M_T">信汇</string>
+    <string name="D_D">汇票</string>
+    <string name="P_N">本票</string>
+    <string name="Other">其他</string>
+    <string name="huiKuan">汇款方式:</string>
+    <string name="applyPeople">申请人</string>
+    <string name="drawer">出票人</string>
+    <string name="payee">收款人</string>
+    <string name="bankName">*开户银行:</string>
+    <string name="openBankName">*开户银行:</string>
+    <string name="accounts">*帐号:</string>
+    <string name="fullName">*全称:</string>
+    <string name="readCard">读卡</string>
+    <string name="money">*金额(元):</string>
+    <string name="money1">金额(大写):</string>
+    <string name="hnnx">河南农村信用社</string>
+    <string name="ballStyle">*票据种类:</string>
+    <string name="ballCommon">普通支票</string>
+    <string name="ballNumber">*票据张数(张):</string>
+    <string name="ballNO">*票据号码:</string>
+    <string name="baotou">包头农商银行</string>
+    <string name="common">普通</string>
+    <string name="worry">加急</string>
+    <string name="drawerNameNoNull">出票人全称不能为空</string>
+    <string name="drawerBankNoNull">出票人开户银行不能为空</string>
+    <string name="drawerAccountNoNull">出票人帐号不能为空</string>
+    <string name="payeeNameNoNull">收票人全称不能为空</string>
+    <string name="payeeBankNoNull">收票人开户银行不能为空</string>
+    <string name="payeeAccountNoNull">收票人帐号不能为空</string>
+    <string name="noteTypeNoNull">票据种类不能为空</string>
+    <string name="noteQuantityNoNull">票据张数不能为空</string>
+    <string name="noteNumberNoNull">票据号码不能为空</string>
+    <string name="amountLowerNoNull">金额不能为空</string>
+    <string name="information">附加信息与用途:</string>
+    <string name="RemintNameNoNull">申请人全称不能为空</string>
+    <string name="RemintBankNoNull">申请人开户银行不能为空</string>
+    <string name="RemintAccountNoNull">申请人帐号不能为空</string>
+
+</resources>

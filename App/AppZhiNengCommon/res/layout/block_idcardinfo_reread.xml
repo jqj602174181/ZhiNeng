@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+	<!-- 显示身份证信息的碎片 -->
+     <TextView
+         android:id="@+id/tv_person_info"
+         android:layout_width="900dp"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="20dp"
+         android:layout_marginTop="10dp"
+         android:lineSpacingExtra="5dp"
+         android:paddingEnd="10dp"
+         android:paddingStart="30dp"
+         android:textColor="@color/framework_font_tip"
+         android:textSize="25sp"
+         android:text="@string/unknow_idcardinfo" />
+
+     <ImageView
+         android:id="@+id/iv_photo"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="10dp"
+         android:contentDescription="@string/app_name"/>
+     
+     <Button android:id="@+id/BTN_EDITIDCARD"
+         android:layout_width="150dp"
+         android:layout_height="130dp"
+         android:layout_marginStart="10dp"
+         android:layout_marginRight="30dp"
+         android:background="@drawable/btn_white_selector"
+         android:text="@string/editidcard"
+         android:textColor="@color/framework_font_tip"
+         android:textSize="28sp"
+         android:visibility="gone"
+         />
+     <Button android:id="@+id/BTN_READIDCARD"
+         android:layout_width="150dp"
+         android:layout_height="130dp"
+         android:background="@drawable/btn_white_selector"
+         android:text="@string/readidcard"
+         android:textColor="@color/framework_font_tip"
+         android:textSize="28sp"
+         android:visibility="gone"
+         />
+
+</LinearLayout>
